@@ -11,7 +11,7 @@ class AnimalNativo {
 		string	m_autorizacao;
 	public:
 		AnimalNativo ();
-		
+		~AnimalNativo ();
 };
 
 #endif

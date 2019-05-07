@@ -3,9 +3,11 @@
 
 #include <string>
 
+using namespace std;
+
 class AnimalSilvestre {
 	protected:
-		std::string autorizacao_ibama;
+		string autorizacao_ibama;
 	public:
 		AnimalSilvestre ();
 		~AnimalSilvestre ();
