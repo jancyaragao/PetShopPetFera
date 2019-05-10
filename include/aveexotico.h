@@ -2,7 +2,7 @@
 #define _AVE_EXOTICO_H_
 
 // Herda Atributos da Classe Ave e AnimalExotico
-class AveExotico : private Ave, private AnimalExotico {
+class AveExotico : public Ave, public AnimalExotico {
     public:
         AveExotico ();
         ~AveExotico ();

@@ -3,17 +3,21 @@
 
 #include <string>
 
+#include "./animalsilvestre.h"
+
 using namespace std;
 
-class AnimalNativo : private AnimalSilvestre {
+class AnimalNativo : public AnimalSilvestre {
 	protected:
 		string m_uf_origem;
 		string	m_autorizacao;
-
-		void setUF_origem ();
-		string getUF_origem (string newUForigem);
-		void setAutorizacao ();
-		string getAutorizacao (string newAutorizacao);
+		
+	// Getters and Setters
+		void setUF_origem (string newUForigem);
+		string getUF_origem ();
+		void setAutorizacao (string newAutorizacao);
+		string getAutorizacao ();
+		
 	public:
 		AnimalNativo ();
 		~AnimalNativo ();

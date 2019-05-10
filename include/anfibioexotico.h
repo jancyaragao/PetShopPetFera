@@ -1,7 +1,7 @@
 #ifndef _ANFIBIO_EXOTICO_H_
 #define _ANFIBIO_EXOTICO_H_
 
-class AnfibioExotico : private Anfibio, private AnimalExotico {
+class AnfibioExotico : public Anfibio, public AnimalExotico {
     public:
         AnfibioExotico ();
         ~AnfibioExotico ();
