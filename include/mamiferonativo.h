@@ -1,7 +1,7 @@
 #ifndef _MAMIFERO_NATIVO_H_
 #define _MAMIFERO_NATIVO_H_
 
-class MamiferoNativo : private Mamifero, private AnimalNativo {
+class MamiferoNativo : public Mamifero, public AnimalNativo {
     public:
         MamiferoNativo();
         ~MamiferoNativo ();

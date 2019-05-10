@@ -5,9 +5,13 @@
 
 using namespace std;
 
-class AnimalExotico : private AnimalSilvestre {
+class AnimalExotico : public AnimalSilvestre {
 	protected:
 		string m_pais_origem;
+
+void setPais_origem ();
+string getPais_origem (string newPais_origem);
+	
 	public:
 		AnimalExotico ();
 		~AnimalExotico ();

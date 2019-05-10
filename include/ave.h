@@ -16,6 +16,6 @@ class Ave {
     public:
         Ave ();
         ~Ave ();
-};
+};/* ave */
 
 #endif
