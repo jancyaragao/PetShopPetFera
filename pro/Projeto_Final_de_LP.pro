@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-05-02T09:49:47
+# Project created by QtCreator 2019-05-09T12:17:53
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Primeiro_exercicio
+TARGET = Projeto_Final_de_LP
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,17 +25,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        dados_usuario.cpp \
         main.cpp \
-        mainwindow.cpp \
-        posautenticartelaprincipal.cpp
+        telalogin.cpp \
+        telamenuprincipal.cpp
 
 HEADERS += \
-        mainwindow.h \
-        posautenticartelaprincipal.h
+        dados_usuario.h \
+        telalogin.h \
+        telamenuprincipal.h
 
 FORMS += \
-        mainwindow.ui \
-        posautenticartelaprincipal.ui
+        telalogin.ui \
+        telamenuprincipal.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
