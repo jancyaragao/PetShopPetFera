@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class AnimalNativo {
+class AnimalNativo : private AnimalSilvestre {
 	protected:
 		string m_uf_origem;
 		string	m_autorizacao;

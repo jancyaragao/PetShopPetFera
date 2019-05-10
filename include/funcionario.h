@@ -13,7 +13,6 @@ class Funcionario {
 		short m_tipo_sanguineo;
 		char m_fator_rh;
 		string m_especialidade
-
 	public:
 		Funcionario();
 		~Funcionario();

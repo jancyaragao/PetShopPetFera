@@ -3,6 +3,7 @@
 
 #include "funcionario.h"
 #include "veterinario.h"
+#include "tratador.h"
 #include <string>
 using namespace std;
 
