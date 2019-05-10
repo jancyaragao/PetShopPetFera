@@ -11,7 +11,7 @@ class AnimalSilvestre {
 	public:
 		AnimalSilvestre ();
 		~AnimalSilvestre ();
-};
+};/* AnimalSilvestre */
 
 
 #endif

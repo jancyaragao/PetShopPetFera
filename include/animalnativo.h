@@ -12,6 +12,6 @@ class AnimalNativo : private AnimalSilvestre {
 	public:
 		AnimalNativo ();
 		~AnimalNativo ();
-};
+};/* AnimalNativo */
 
 #endif
