@@ -8,6 +8,10 @@ using namespace std;
 class AnimalSilvestre {
 	protected:
 		string autorizacao_ibama;
+
+	void setAutorizacao_ibama ();
+	string getAutorizacao_ibama (string newAutorizacao_ibama);
+
 	public:
 		AnimalSilvestre ();
 		~AnimalSilvestre ();

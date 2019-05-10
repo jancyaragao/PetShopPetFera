@@ -9,6 +9,11 @@ class AnimalNativo : private AnimalSilvestre {
 	protected:
 		string m_uf_origem;
 		string	m_autorizacao;
+
+		void setUF_origem ();
+		string getUF_origem (string newUForigem);
+		void setAutorizacao ();
+		string getAutorizacao (string newAutorizacao);
 	public:
 		AnimalNativo ();
 		~AnimalNativo ();
