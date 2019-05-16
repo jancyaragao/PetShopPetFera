@@ -16,6 +16,7 @@ class Veterinario: public Funcionario {
 		// Getters and Setters
 		void setCrmv(new_crmv);
 		string getCrmv();
+		
 }; /* Veterinario */
 
 #endif

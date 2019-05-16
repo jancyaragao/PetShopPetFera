@@ -14,10 +14,6 @@ class Funcionario {
 		char m_fator_rh;
 		string m_especialidade;
 
-	public:
-		Funcionario();
-		~Funcionario();
-
 		// Getters and Setters
 		void setId(int new_id);
 		int getId();
@@ -39,6 +35,11 @@ class Funcionario {
 
 		void setEspecialidade(string new_especialidade);
 		string getEspecialidade();
+
+	public:
+		Funcionario();
+		Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade);
+		~Funcionario();
 
 }; /* Funcionario */
 

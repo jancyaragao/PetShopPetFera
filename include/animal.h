@@ -19,16 +19,11 @@ class Animal {
 		Tratador m_tratador;
 		string m_nome_batismo;
 
-	public:
-		Animal();
-		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
-		~Animal();
-
 		// Getters and Setters
 		void setId(int new_id);
 		int getId();
 		
-		void setClasse(string new_Classe);
+		void setClasse(string new_classe);
 		string getClasse();
 		
 		void setNome_cientifico(string new_nome_cientifico);
@@ -51,6 +46,12 @@ class Animal {
 
 		void setNome_batismo(string new_nome_batismo);
 		string getNome_batismo();
+
+	public:
+		Animal();
+		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
+		~Animal();
+		
 }; /* Animal */
 
 #endif
