@@ -1,5 +1,5 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
+#ifndef _ANIMAL_H_
+#define _ANIMAL_H_
 
 #include "funcionario.h"
 #include "veterinario.h"
@@ -19,10 +19,44 @@ class Animal {
 		Tratador m_tratador;
 		string m_nome_batismo;
 
+		// Getters and Setters
+		void setId(int new_id);
+		int getId();
+		
+		void setClasse(string new_classe);
+		string getClasse();
+		
+		void setNome_cientifico(string new_nome_cientifico);
+		string getNome_cientifico();
+		
+		void setSexo(char new_sexo);
+		char getSexo();
+		
+		void setTamanho(double new_tamanho);
+		double getTamanho();
+		
+		void setDieta(string new_dieta);
+		string getDieta();
+
+		void setVeterinario(Veterinario new_veterinario);
+		Veterinario getVeterinario();
+
+		void setTratador(Tratador new_tratador);
+		Tratador getTratador();
+
+		void setNome_batismo(string new_nome_batismo);
+		string getNome_batismo();
+
 	public:
 		Animal( void );
 		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
+<<<<<<< HEAD
 		~Animal( void );
 };
+=======
+		~Animal();
+		
+}; /* Animal */
+>>>>>>> 770dcaadfacfa40410cbcbca2624b7ef5428f28e
 
 #endif
