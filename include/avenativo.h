@@ -3,9 +3,9 @@
 
 class AveNativo : public ave, public AnimalNativo {
     public:
-        AveNativo ();
-        ~AveNativo ();
-};
+        AveNativo ( void );
+        ~AveNativo ( void );
+}; /*AveNativo*/
 
 
 #endif

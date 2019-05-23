@@ -3,8 +3,8 @@
 
 class ReptilNativo : public Reptil, public AnimalNativo {
     public:
-        ReptilNativo ();
-        ~ReptilNativo ();
+        ReptilNativo ( void );
+        ~ReptilNativo ( void );
 };
 
 #endif

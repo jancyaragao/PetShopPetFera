@@ -14,8 +14,8 @@ class Funcionario {
 		char m_fator_rh;
 		string m_especialidade
 	public:
-		Funcionario();
-		~Funcionario();
+		Funcionario( void );
+		~Funcionario( void );
 };
 
 #endif

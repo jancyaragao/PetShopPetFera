@@ -11,11 +11,11 @@ class AnimalSilvestre {
 
 	// Getters and Setters
 		void setAutorizacao_ibama (string newAutorizacao_ibama);
-		string getAutorizacao_ibama ();
+		string getAutorizacao_ibama ( void );
 
 	public:
-		AnimalSilvestre ();
-		~AnimalSilvestre ();
+		AnimalSilvestre ( void );
+		~AnimalSilvestre ( void );
 };/* AnimalSilvestre */
 
 

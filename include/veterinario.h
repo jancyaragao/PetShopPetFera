@@ -9,8 +9,8 @@ class Veterinario: public Funcionario {
 		string m_crmv;
 
 	public:
-		Veterinario();
-		~Veterinario();
+		Veterinario( void );
+		~Veterinario( void );
 	
 };
 

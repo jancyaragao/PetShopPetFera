@@ -4,8 +4,8 @@
 // Herda Atributos da Classe Ave e AnimalExotico
 class AveExotico : public Ave, public AnimalExotico {
     public:
-        AveExotico ();
-        ~AveExotico ();
+        AveExotico ( void );
+        ~AveExotico ( void );
 };/* AveExotico */
 
 #endif

@@ -3,8 +3,8 @@
 
 class MamiferoExotico : public Mamifero, public AnimalExotico {
     public:
-        MamiferoExotico ();
-        ~MamiferoExotico ();
+        MamiferoExotico ( void );
+        ~MamiferoExotico ( void );
 };
 
 #endif

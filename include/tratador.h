@@ -8,8 +8,8 @@ class Tratador: public Funcionario {
 		int m_nivel_de_seguranca;
 
 	public:
-		Tratador();
-		~Tratador();
+		Tratador( void );
+		~Tratador( void );
 	
 };
 

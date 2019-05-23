@@ -10,12 +10,12 @@ class Ave {
         
         // Getters and Setters
         void setTamanho_do_bico_cm (double new_Tamanho_do_bico);
-        double getTamanho_do_bico_cm ();
+        double getTamanho_do_bico_cm ( void );
         void setEnvergaruda_das_asas (double new_Envergadura_das_asas);
-        double getEnvergadura_das_asas ();
+        double getEnvergadura_das_asas ( void );
     public:
-        Ave ();
-        ~Ave ();
+        Ave ( void );
+        ~Ave ( void );
 };/* ave */
 
 #endif

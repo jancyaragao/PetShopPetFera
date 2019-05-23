@@ -14,13 +14,13 @@ class AnimalNativo : public AnimalSilvestre {
 		
 	// Getters and Setters
 		void setUF_origem (string newUForigem);
-		string getUF_origem ();
+		string getUF_origem ( void );
 		void setAutorizacao (string newAutorizacao);
-		string getAutorizacao ();
+		string getAutorizacao ( void );
 		
 	public:
-		AnimalNativo ();
-		~AnimalNativo ();
+		AnimalNativo ( void );
+		~AnimalNativo ( void );
 };/* AnimalNativo */
 
 #endif

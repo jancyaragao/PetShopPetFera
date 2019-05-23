@@ -5,16 +5,18 @@
 
 using namespace std;
 
+#include "../include/animalsilvestre.h"
+
 class AnimalExotico : public AnimalSilvestre {
 	protected:
 		string m_pais_origem;
 
-void setPais_origem ();
-string getPais_origem (string newPais_origem);
+		void setPais_origem (string newPais_origem);
+		string getPais_origem ( void );
 	
 	public:
-		AnimalExotico ();
-		~AnimalExotico ();
+		AnimalExotico ( void );
+		~AnimalExotico ( void );
 }; /* AnimalExotico */
 
 #endif

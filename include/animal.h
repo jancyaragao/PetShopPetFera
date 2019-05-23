@@ -20,9 +20,9 @@ class Animal {
 		string m_nome_batismo;
 
 	public:
-		Animal();
+		Animal( void );
 		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
-		~Animal();
+		~Animal( void );
 };
 
 #endif
