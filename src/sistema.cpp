@@ -1,5 +1,7 @@
 #include "../include/sistema.h"
 
+using namespace std;
+
 // Construtores e Destrutores
 	Sistema::Sistema () {
 
@@ -8,33 +10,30 @@
 
 	};/*~Sistema*/
 // Metodos para Animais
-	Sistema::cadastro_animal () {
-
+	bool Sistema::cadastro_animal (int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo) {
+	
 	};/*Cadastro Animal*/
-	Sistema::remocao_animal () {
+	bool Sistema::remocao_animal () {
 
 	};/*Remocao Animal*/
-	Sistema::alteracao_animal () {
+	bool Sistema::alteracao_animal () {
 
 	};/*Alteracao Animal*/
-	Sistema::consultar_animal () {
 
-	};/*Consultar Animal*/
-	Sistema::consultar_animais_de_funcionario () {
+// STUB ==>
+	// Sistema::consultar_animal () {
 
-	};/*Consultar Animais de Funcionarios*/
+	// };/*Consultar Animal*/
+	// Sistema::consultar_animais_de_funcionario () {
+
+	// };/*Consultar Animais de Funcionarios*/
+// <=== ENDSTUB
+		
 // Metodos para Funcionarios
 	// Veterinarios
-		Sistema::cadastro_veterinario () {
+		bool Sistema::cadastro_funcionario (int id, string funcao, string nome, string cpf, int idade, string tipo_sanguineo, char fator_RH, string espacialidade, string crmv, int nivel_seguranca) {
 
-		};/*Cadastro de Veterinario*/
-		Sistema::remocao_veterinario () {
+		};/*Cadastro de Funcionario*/
+		bool Sistema::remocao_funcionario () {
 
-		};/*Remocao de Veterinario*/
-	// Tratadores
-		Sistema::cadastro_tratador () {
-
-		};/*Cadastro de Tratador*/
-		Sistema::remocao_tratador () {
-
-		};/*Remocao de Tratador*/
+		};/*Remocao de Funcionario*/

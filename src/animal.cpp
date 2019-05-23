@@ -3,7 +3,9 @@
 using namespace std;
 
 Animal::Animal() { /*empty*/ }
-Animal::Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo):m_id(id), m_classe(classe), m_nome_cientifico(nome_cientifico), m_sexo(sexo), m_tamanho(tamanho), m_dieta(dieta), m_veterinario(veterinario), m_tratador(tratador), m_nome_batismo(nome_batismo) { /*empty*/ }
+Animal::Animal(int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo) {
+ /*code...*/ 
+}
 Animal::~Animal() { /*empty*/ }
 
 void Animal::setId(int new_id){
@@ -48,17 +50,17 @@ string Animal::getDieta() {
 	return m_dieta;
 }
 
-void Animal::setVeterinario(Veterinario new_veterinario) {
+void Animal::setVeterinario(int new_veterinario) {
 	m_veterinario = new_veterinario;
 }
-Veterinario Animal::getVeterinario() {
+int Animal::getVeterinario() {
 	return m_veterinario;
 }
 
-void Animal::setTratador(Tratador new_tratador) {
+void Animal::setTratador(int new_tratador) {
 	m_tratador = new_tratador;
 }
-Tratador Animal::getTratador() {
+int Animal::getTratador() {
 	return m_tratador;
 }
 

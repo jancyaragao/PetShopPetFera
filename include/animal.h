@@ -15,8 +15,8 @@ class Animal {
 		char m_sexo;
 		double m_tamanho;
 		string m_dieta;
-		Veterinario m_veterinario;
-		Tratador m_tratador;
+		int m_veterinario;
+		int m_tratador;
 		string m_nome_batismo;
 
 		// Getters and Setters
@@ -38,25 +38,25 @@ class Animal {
 		void setDieta(string new_dieta);
 		string getDieta();
 
-		void setVeterinario(Veterinario new_veterinario);
-		Veterinario getVeterinario();
+		void setVeterinario(int new_veterinario);
+		int getVeterinario();
 
-		void setTratador(Tratador new_tratador);
-		Tratador getTratador();
+		void setTratador(int new_tratador);
+		int getTratador();
 
 		void setNome_batismo(string new_nome_batismo);
 		string getNome_batismo();
 
 	public:
 		Animal( void );
-		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
-<<<<<<< HEAD
+		Animal(int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo);
+// <<<<<<< HEAD
 		~Animal( void );
 };
 =======
 		~Animal();
 		
 }; /* Animal */
->>>>>>> 770dcaadfacfa40410cbcbca2624b7ef5428f28e
+// >>>>>>> 770dcaadfacfa40410cbcbca2624b7ef5428f28e
 
 #endif

@@ -37,16 +37,10 @@ class Funcionario {
 		string getEspecialidade();
 
 	public:
-<<<<<<< HEAD
-		Funcionario( void );
-		~Funcionario( void );
-};
-=======
 		Funcionario();
 		Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade);
 		~Funcionario();
 
 }; /* Funcionario */
->>>>>>> 770dcaadfacfa40410cbcbca2624b7ef5428f28e
 
 #endif
