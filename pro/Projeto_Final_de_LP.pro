@@ -25,17 +25,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        cadastramento_usuario.cpp \
         dados_usuario.cpp \
         main.cpp \
+        telaanimais.cpp \
         telalogin.cpp \
         telamenuprincipal.cpp
 
 HEADERS += \
+        cadastramento_usuario.h \
         dados_usuario.h \
+        telaanimais.h \
         telalogin.h \
         telamenuprincipal.h
 
 FORMS += \
+        cadastramento_usuario.ui \
+        telaanimais.ui \
         telalogin.ui \
         telamenuprincipal.ui
 
@@ -43,3 +49,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resourcefile.qrc
