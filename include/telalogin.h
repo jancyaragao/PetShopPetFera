@@ -27,6 +27,8 @@ private slots:
 
     void on_btn_entrar_clicked();
 
+    void on_btn_testador_clicked();
+
 private:
     Ui::telaLogin *ui;
     QVector <dados_usuario*> dados;
