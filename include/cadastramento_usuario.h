@@ -3,6 +3,7 @@
 #include <QComboBox>
 #include <QMainWindow>
 
+
 namespace Ui {
 class cadastramento_usuario;
 }
@@ -14,6 +15,12 @@ class cadastramento_usuario : public QMainWindow
 public:
     explicit cadastramento_usuario(QWidget *parent = nullptr);
     ~cadastramento_usuario();
+
+private slots:
+    void on_buttonBox_rejected();
+
+    void on_buttonBox_accepted();
+
 private:
     Ui::cadastramento_usuario *ui;
 };

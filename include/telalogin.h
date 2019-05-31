@@ -20,7 +20,7 @@ public:
     explicit telaLogin(QWidget *parent = nullptr);
     ~telaLogin();
     void verificador_de_login_e_senha();
-    void registrar_usuario();
+    void registrar_usuario(int id_, QString nome_, QString funcao_, QString senha_, QString foto3x4_, QString cpf_, QString especialidade_,short int idade_, int nivel_de_seguranca_);
 
 private slots:
     void on_btn_Criar_Usuario_clicked();

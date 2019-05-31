@@ -7,12 +7,16 @@ telaLogin::telaLogin(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->statusBar->showMessage("\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTodos os direitos reservados a JanLoTi Corporation™");
+    int id = 2019100;
     QString nome_de_usuario = "admin";
     QString senha_do_usuario = "admin";
     QString cargo_do_usuario = "Administrador de testes";
     QString nome_de_registro_do_usuario = "Administrador JanLoTi Corporation";
     QString foto = ":/imagens/Imagens/photo.jpg";
-    dados.push_back(new dados_usuario(nome_de_registro_do_usuario,nome_de_usuario,cargo_do_usuario,senha_do_usuario,foto));
+    QString cpf = "";
+    QString especialidade= "";
+    short int idade = 14;
+    dados.push_back(new dados_usuario(id,nome_de_registro_do_usuario,nome_de_usuario,cargo_do_usuario,senha_do_usuario,foto,cpf,especialidade,idade));
 }
 
 telaLogin::~telaLogin()
@@ -22,12 +26,16 @@ telaLogin::~telaLogin()
 
 void telaLogin::on_btn_Criar_Usuario_clicked()
 {
+    int id = 2019100;
     QString nome_de_usuario = "admin";
     QString senha_do_usuario = "admin";
     QString cargo_do_usuario = "Administrador de testes";
     QString nome_de_registro_do_usuario = "Administrador JanLoTi Corporation";
-    QString foto = ":imagens/Imagens/fotoadministradordetestes.png";
-    dados.push_back(new dados_usuario(nome_de_registro_do_usuario,nome_de_usuario,cargo_do_usuario,senha_do_usuario,foto));
+    QString foto = ":/imagens/Imagens/photo.jpg";
+    QString cpf = "";
+    QString especialidade= "";
+    short int idade = 14;
+    dados.push_back(new dados_usuario(id,nome_de_registro_do_usuario,nome_de_usuario,cargo_do_usuario,senha_do_usuario,foto,cpf,especialidade,idade));
     QMessageBox::critical(this,"", "Adicionados");
 }
 
@@ -39,7 +47,7 @@ void telaLogin::on_btn_entrar_clicked()
         if(QString::compare(login,dados[i]->get_usuario())==0 && QString::compare(senha,dados[i]->get_senha())==0){
             this->close();
             TelaPrincipalPointer=new TelaMenuPrincipal(this);
-            TelaPrincipalPointer->RecebeNome(dados[i]->get_nome_oficial_usuario(),dados[i]->get_cargo_usuario(),dados[i]->get_foto3x4());
+            TelaPrincipalPointer->RecebeNome(dados[i]->get_nome_oficial_usuario(),dados[i]->get_funcao_usuario(),dados[i]->get_foto3x4());
             TelaPrincipalPointer->showMaximized();
         }
         else{
@@ -62,4 +70,7 @@ void telaLogin::on_btn_testador_clicked()
 {
     TelaPrincipalPointer=new TelaMenuPrincipal(this);
     TelaPrincipalPointer->show();
+}
+void telaLogin::registrar_usuario(int id_, QString nome_, QString funcao_, QString senha_, QString foto3x4_, QString cpf_, QString especialidade_,short int idade_, int nivel_de_seguranca_){
+//    dados.push_back(new dados_usuario(id_,nome_,funcao_,senha_, foto3x4_,cpf_,especialidade_,idade_,nivel_de_seguranca_));
 }
