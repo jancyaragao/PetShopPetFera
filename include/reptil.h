@@ -2,9 +2,12 @@
 #define REPTIL_H
 
 #include <string>
+
+#include "animal.h"
+
 using namespace std;
 
-class Reptil {
+class Reptil : public Animal {
 	protected:
 		bool m_venenoso;
 		string m_tipo_veneno;
@@ -18,7 +21,8 @@ class Reptil {
 		
 	public:
 		Reptil();
-		Reptil(bool venenoso, string tipo_veneno);
+		Reptil(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno);
 		~Reptil();
 
 }; /* Réptil */

@@ -1,32 +1,46 @@
 #ifndef _SISTEMA_H_
 #define _SISTEMA_H_
 
-#include <iostream>
-#include <ofstream>
 #include <string>
 #include <map>
 
-#include "../include/animal.h"
+#include "animal.h"
+#include "animalexotico.h"
+#include "mamifero.h"
+#include "reptil.h"
 
 using namespace std;
 
 class Sistema {
 	private:
-
+		map <int, Animal*> animais;
 	public:
-// Construtores e Destrutores
-		Sistema( void );
-		~Sistema( void );
-// Metodos para Animais
-		bool cadastro_animal (int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo); /*Cadastro de Animais*/
-		bool remocao_animal (); /*Remove um animal*/
-		bool alteracao_animal (); /*Alteracao de dados de um animal*/
-		// STUB ==> consultar_animal (); /*Consultar dados de um determinado animal ou classe*/
-		// STUB ==> consultar_animais_de_funcionario (); /*Consultar animais sob a responsabilidade de um determinado funcionario*/
-// Metodos para Funcionarios
-		// Veterinarios
-			bool cadastro_funcionario (int id, string funcao, string nome, string cpf, int idade, string tipo_sanguineo, char fator_RH, string espacialidade, string crmv, int nivel_seguranca);
-			bool remocao_funcionario ();
+		
+		bool cadastrar_funcionario ();
+		/*Construtor Padrão*/
+
+		bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo );
+		/*Cadastro Animal*/
+
+		bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo);
+		/*Cadastrar Mamifero*/
+
+		bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno);
+		/*Cadastrar Reptil*/
+
+
+
+
+
+		// remocao_animal ();
+		// alteracao_dados_animal ();
+		// consultar_animal ();
+		// consultar_animal_por_func ();
+		// STUB ===>
 };
+
 
 #endif

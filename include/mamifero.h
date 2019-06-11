@@ -2,6 +2,9 @@
 #define MAMIFERO_H
 
 #include <string>
+
+#include "./animal.h"
+
 using namespace std;
 
 class Mamifero: public Animal {
@@ -14,7 +17,8 @@ class Mamifero: public Animal {
 		
 	public:
 		Mamifero();
-		Mamifero(string cor_pelo);
+		Mamifero(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+				string dieta, int veterinario, int tratador, string m_nome_batismo, string cor_pelo);
 		~Mamifero();
 
 }; /* Mamífero */
