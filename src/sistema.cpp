@@ -1,39 +1,33 @@
+#include <iostream>
+
 #include "../include/sistema.h"
 
 using namespace std;
 
-// Construtores e Destrutores
-	Sistema::Sistema () {
+bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+string dieta, int veterinario, int tratador, string m_nome_batismo) 
+{
+	// Animal* novo = new Animal (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador, m_nome_batismo, "preto");
 
-	}; /*Sistema*/
-	Sistema::~Sistema () {
+	// animais.insert ({id,novo});
 
-	};/*~Sistema*/
-// Metodos para Animais
-	bool Sistema::cadastro_animal (int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo) {
-	
-	};/*Cadastro Animal*/
-	bool Sistema::remocao_animal () {
+	return true;
+} /*Cadastro de Animal*/
 
-	};/*Remocao Animal*/
-	bool Sistema::alteracao_animal () {
+bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo) 
+{
+	Animal* novo = new Mamifero (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador, m_nome_batismo, m_cor_pelo);
 
-	};/*Alteracao Animal*/
+	animais.insert ({id,novo});
 
-// STUB ==>
-	// Sistema::consultar_animal () {
+	return true;
+} /*Cadastro de Mamifero*/
 
-	// };/*Consultar Animal*/
-	// Sistema::consultar_animais_de_funcionario () {
-
-	// };/*Consultar Animais de Funcionarios*/
-// <=== ENDSTUB
-		
-// Metodos para Funcionarios
-	// Veterinarios
-		bool Sistema::cadastro_funcionario (int id, string funcao, string nome, string cpf, int idade, string tipo_sanguineo, char fator_RH, string espacialidade, string crmv, int nivel_seguranca) {
-
-		};/*Cadastro de Funcionario*/
-		bool Sistema::remocao_funcionario () {
-
-		};/*Remocao de Funcionario*/
+bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno) 
+{
+	Animal* novo = new Reptil (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador, m_nome_batismo, m_venenoso, tipo_veneno);
+	animais.insert ({id,novo});
+	return true;
+} /*Cadastro de Reptil*/

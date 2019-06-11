@@ -1,9 +1,6 @@
 #ifndef _ANIMAL_H_
 #define _ANIMAL_H_
 
-#include "funcionario.h"
-#include "veterinario.h"
-#include "tratador.h"
 #include <string>
 using namespace std;
 
@@ -49,14 +46,9 @@ class Animal {
 
 	public:
 		Animal( void );
-		Animal(int id, string classe, string nome_animal, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo);
-// <<<<<<< HEAD
+		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo);
 		~Animal( void );
-};
-=======
-		~Animal();
 		
 }; /* Animal */
-// >>>>>>> 770dcaadfacfa40410cbcbca2624b7ef5428f28e
 
 #endif
