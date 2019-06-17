@@ -12,7 +12,7 @@ class AnimalNativo : public AnimalSilvestre {
 		string m_uf_origem;
 		string	m_autorizacao;
 		
-	// Getters and Setters
+		// Getters and Setters
 		void setUF_origem (string newUForigem);
 		string getUF_origem ( void );
 		void setAutorizacao (string newAutorizacao);
@@ -20,6 +20,7 @@ class AnimalNativo : public AnimalSilvestre {
 		
 	public:
 		AnimalNativo ( void );
+		AnimalNativo (string uf_origem, string autorizacao);
 		~AnimalNativo ( void );
 };/* AnimalNativo */
 

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#include "../include/animalsilvestre.h"
+#include "./animalsilvestre.h"
 
 class AnimalExotico : public AnimalSilvestre {
 	protected:
@@ -16,6 +16,7 @@ class AnimalExotico : public AnimalSilvestre {
 	
 	public:
 		AnimalExotico ( void );
+		AnimalExotico (string pais_origem);
 		~AnimalExotico ( void );
 }; /* AnimalExotico */
 

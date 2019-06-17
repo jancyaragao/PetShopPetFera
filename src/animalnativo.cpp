@@ -5,6 +5,8 @@
 
 AnimalNativo::AnimalNativo ( void ) { /*empty*/ };
 
+AnimalNativo::AnimalNativo (string uf_origem, string autorizacao) {/*empty*/};
+
 AnimalNativo::~AnimalNativo ( void ) { /*empty*/ };
 
 void AnimalNativo::setUF_origem (string newUForigem){
