@@ -9,7 +9,7 @@ class ReptilExotico : public Reptil, public AnimalExotico {
         ReptilExotico ( void );
         ReptilExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
-		string tipo_veneno, string pais_origem);
+		string tipo_veneno, string pais_origem, string cidade_origem);
         ~ReptilExotico ( void );
 };
 

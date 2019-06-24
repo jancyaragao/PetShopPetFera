@@ -16,38 +16,38 @@ class Animal {
 		int m_tratador;
 		string m_nome_batismo;
 
-		// Getters and Setters
-		void setId(int new_id);
-		int getId();
-		
-		void setClasse(string new_classe);
-		string getClasse();
-		
-		void setNome_cientifico(string new_nome_cientifico);
-		string getNome_cientifico();
-		
-		void setSexo(char new_sexo);
-		char getSexo();
-		
-		void setTamanho(double new_tamanho);
-		double getTamanho();
-		
-		void setDieta(string new_dieta);
-		string getDieta();
-
-		void setVeterinario(int new_veterinario);
-		int getVeterinario();
-
-		void setTratador(int new_tratador);
-		int getTratador();
-
-		void setNome_batismo(string new_nome_batismo);
-		string getNome_batismo();
-
 	public:
 		Animal( void );
 		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo);
-		~Animal( void );
+		virtual ~Animal( void );
+
+		// Getters and Setters
+		virtual void setId(int new_id) = 0;
+		virtual int getId() = 0;
+		
+		virtual void setClasse(string new_classe) = 0;
+		virtual string getClasse() = 0;
+		
+		virtual void setNome_cientifico(string new_nome_cientifico) = 0;
+		virtual string getNome_cientifico() = 0;
+		
+		virtual void setSexo(char new_sexo) = 0;
+		virtual char getSexo() = 0;
+		
+		virtual void setTamanho(double new_tamanho) = 0;
+		virtual double getTamanho() = 0;
+		
+		virtual void setDieta(string new_dieta) = 0;
+		virtual string getDieta() = 0;
+
+		virtual void setVeterinario(int new_veterinario) = 0;
+		virtual int getVeterinario() = 0;
+
+		virtual void setTratador(int new_tratador) = 0;
+		virtual int getTratador() = 0;
+
+		virtual void setNome_batismo(string new_nome_batismo) = 0;
+		virtual string getNome_batismo() = 0;
 		
 }; /* Animal */
 

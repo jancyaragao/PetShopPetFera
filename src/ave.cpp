@@ -24,3 +24,66 @@ void Ave::setEnvergaruda_das_asas (double new_envergadura_das_asas) {
 double Ave::getEnvergadura_das_asas () {
 	return m_envergadura_das_asas;
 }
+
+void Ave::setId(int new_id){
+	m_id = new_id;
+}
+int Ave::getId() {
+	return m_id;
+}
+
+void Ave::setClasse(string new_classe) {
+	m_classe = new_classe;
+}
+string Ave::getClasse() {
+	return m_classe;
+}
+
+void Ave::setNome_cientifico(string new_nome_cientifico) {
+	m_nome_cientifico = new_nome_cientifico;
+}
+string Ave::getNome_cientifico() {
+	return m_nome_cientifico;
+}
+
+void Ave::setSexo(char new_sexo) {
+	m_sexo = new_sexo;
+}
+char Ave::getSexo() {
+	return m_sexo;
+}
+
+void Ave::setTamanho(double new_tamanho) {
+	m_tamanho = new_tamanho;
+}
+double Ave::getTamanho() {
+	return m_tamanho;
+}
+
+void Ave::setDieta(string new_dieta) {
+	m_dieta = new_dieta;
+}
+string Ave::getDieta() {
+	return m_dieta;
+}
+
+void Ave::setVeterinario(int new_veterinario) {
+	m_veterinario = new_veterinario;
+}
+int Ave::getVeterinario() {
+	return m_veterinario;
+}
+
+void Ave::setTratador(int new_tratador) {
+	m_tratador = new_tratador;
+}
+int Ave::getTratador() {
+	return m_tratador;
+}
+
+void Ave::setNome_batismo(string new_nome_batismo) {
+	m_nome_batismo = new_nome_batismo;
+}
+string Ave::getNome_batismo() {
+	return m_nome_batismo;
+}

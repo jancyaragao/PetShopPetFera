@@ -28,7 +28,10 @@ using namespace std;
 
 class Sistema {
 	private:
-		map <int, Animal*> animais;
+		/*Container contendo todos os animais*/
+		map <int, Animal*> animais; 
+
+		/*Container contendo todos os funcionários*/
 		// map <int, Funcionario*> funcionarios;
 	public:
 
@@ -50,7 +53,7 @@ class Sistema {
 
 			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 			string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,
-			string pais_origem);
+			string pais_origem, string cidade_origem);
 			/*Cadastrar Mamifero Exotico*/
 
 		bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
@@ -64,7 +67,7 @@ class Sistema {
 
 			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 			string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
-			string tipo_veneno, string pais_origem);
+			string tipo_veneno, string pais_origem, string cidade_origem);
 			/*Cadastrar Reptil Exotico*/		
 
 		bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
@@ -79,7 +82,7 @@ class Sistema {
 
 			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 			string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-			double envergadura_das_asas, string pais_origem);
+			double envergadura_das_asas, string pais_origem, string cidade_origem);
 			/*Cadastrar Ave Exotica*/
 
 		bool cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
@@ -93,7 +96,7 @@ class Sistema {
 
 			bool cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 			string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-			string pais_origem);
+			string pais_origem, string cidade_origem);
 			/*Cadastrar Anfibio Exotico*/
 
 		// STUB ===>
