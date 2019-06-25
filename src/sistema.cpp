@@ -37,13 +37,13 @@ bool Sistema::verificaIdFuncionario(int id) {
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
 char fator_rh, string especialidade, int nivel_de_seguranca) {
 	Funcionario* novo = new Tratador(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, nivel_de_seguranca);
-	funcionarios.insert(id, novo);
+	funcionarios.insert({id, novo});
 }
 
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
 char fator_rh, string especialidade, string crmv) {
 	Funcionario* novo = new Veterinario(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, crmv);
-	funcionarios.insert(id, novo);
+	funcionarios.insert({id, novo});
 }
 
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
