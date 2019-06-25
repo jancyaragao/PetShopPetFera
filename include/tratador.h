@@ -27,8 +27,6 @@ class Tratador: public Funcionario {
 		short getIdade();
 		void setTipo_sanguineo(short new_tipo_sanguineo);
 		short getTipo_sanguineo();
-		void setFator_rh(char new_fator_rh);
-		char getFator_rh();
 		void setEspecialidade(string new_especialidade);
 		string getEspecialidade();
 		

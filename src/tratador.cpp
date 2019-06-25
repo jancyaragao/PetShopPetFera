@@ -3,8 +3,8 @@ using namespace std;
 
 Tratador::Tratador() { /*empty*/ }
 Tratador::Tratador(int id, string nome, string cpf, short idade, short tipo_sanguineo,
-            char fator_rh, string especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
-            fator_rh, especialidade), m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
+            string especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
+            especialidade), m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
 Tratador::~Tratador() { /*empty*/ }
 
 	void Tratador::setNivel_de_seguranca(int new_nivel_de_seguranca) {
@@ -47,13 +47,6 @@ void Tratador::setTipo_sanguineo(short new_tipo_sanguineo) {
 }
 short Tratador::getTipo_sanguineo() {
 	return m_tipo_sanguineo;
-}
-
-void Tratador::setFator_rh(char new_fator_rh) {
-	m_fator_rh = new_fator_rh;
-}
-char Tratador::getFator_rh() {
-	return m_fator_rh;
 }
 
 void Tratador::setEspecialidade(string new_especialidade) {
