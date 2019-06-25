@@ -1,74 +1,76 @@
 PROG = PetFera
 CC = g++
-CPPFLAGS = -O0 -g -Wall -std=c++11 -l/./include
-LDFLAGS = -L/.src -lmylib
-OBJS = anfibio.o anfibioexotico.o anfibionativo.o animal.o animalexotico.o animalnativo.o animalsilvestre.o ave.o aveexcotico.o avenativo.o funcionario.o main.o mamifero.o mamiferoexotico.o mamiferonativo.o reptil.o reptilexotico.o reptilnativo.o sistema.o tratador.o veterinario.o
+CPPFLAGS = -O0 -g -Wall -std=c++11 -I./include
+SRC = ./src
+INC = ./include
+# LDFLAGS = -Lsrc -lmylib
+OBJS = anfibio.o anfibioexotico.o anfibionativo.o animal.o animalexotico.o animalnativo.o animalsilvestre.o ave.o aveexotico.o avenativo.o funcionario.o main.o mamifero.o mamiferoexotico.o mamiferonativo.o reptil.o reptilexotico.o reptilnativo.o sistema.o tratador.o veterinario.o
 
 $(PROG) : $(OBJS)
-	$(CC) $(LDFLAGS) -o $(PROG) $(OBJS)
+	$(CC) -o $(PROG) $(OBJS)
 
-anfibio.o : anfibio.h
-	$(CC) $(CPPFLAGS) -c anfibio.cpp
+anfibio.o : $(SRC)/anfibio.cpp $(INC)/anfibio.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/anfibio.cpp
 
-anfibioexotico.o : anfibioexotico.h
-	$(CC) $(CPPFLAGS) -c anfibioexotico.cpp
+anfibioexotico.o : $(SRC)/anfibioexotico.cpp $(INC)/anfibioexotico.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/anfibioexotico.cpp
 
-anfibionativo.o : anfibionativo.h
-	$(CC) $(CPPFLAGS) -c anfibionativo.cpp
+anfibionativo.o : $(SRC)/anfibionativo.cpp $(INC)/anfibionativo.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/anfibionativo.cpp
 
-animal.o : animal.h
-	$(CC) $(CPPFLAGS) -c animal.cpp
+animal.o : $(SRC)/animal.cpp $(INC)/animal.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/animal.cpp
 
-animalexotico.o : animalexotico.h
-	$(CC) $(CPPFLAGS) -c animalexotico.cpp
+animalexotico.o : $(SRC)/animalexotico.cpp $(INC)/animalexotico.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/animalexotico.cpp
 
-animalnativo.o : animalnativo.h
-	$(CC) $(CPPFLAGS) -c animalnativo.cpp
+animalnativo.o : $(SRC)/animalnativo.cpp $(INC)/animalnativo.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/animalnativo.cpp
 
-animalsilvestre.o : animalsilvestre.h
-	$(CC) $(CPPFLAGS) -c animalsilvestre.cpp
+animalsilvestre.o : $(SRC)/animalsilvestre.cpp $(INC)/animalsilvestre.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/animalsilvestre.cpp
 
-ave.o : ave.h
-	$(CC) $(CPPFLAGS) -c ave.cpp
+ave.o : $(SRC)/ave.cpp $(INC)/ave.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/ave.cpp
 
-aveexcotico.o : aveexcotico.h
-	$(CC) $(CPPFLAGS) -c aveexcotico.cpp
+aveexotico.o : $(SRC)/aveexotico.cpp $(INC)/aveexotico.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/aveexotico.cpp
 
-avenativo.o : avenativo.h
-	$(CC) $(CPPFLAGS) -c avenativo.cpp
+avenativo.o : $(SRC)/avenativo.cpp $(INC)/avenativo.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/avenativo.cpp
 
-funcionario.o : funcionario.h
-	$(CC) $(CPPFLAGS) -c funcionario.cpp
+funcionario.o : $(SRC)/funcionario.cpp $(INC)/funcionario.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/funcionario.cpp
 
-main.o :
-	$(CC) $(CPPFLAGS) -c main.cpp
+main.o : $(SRC)/main.cpp
+	$(CC) $(CPPFLAGS) -c $(SRC)/main.cpp
 
-mamifero.o : mamifero.h
-	$(CC) $(CPPFLAGS) -c mamifero.cpp
+mamifero.o : $(SRC)/mamifero.cpp $(INC)/mamifero.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/mamifero.cpp
 
-mamiferoexotico.o : mamiferoexotico.h
-	$(CC) $(CPPFLAGS) -c mamiferoexotico.cpp
+mamiferoexotico.o : $(SRC)/mamiferoexotico.cpp $(INC)/mamiferoexotico.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/mamiferoexotico.cpp
 
-mamiferonativo.o : mamiferonativo.h
-	$(CC) $(CPPFLAGS) -c mamiferonativo.cpp
+mamiferonativo.o : $(SRC)/mamiferonativo.cpp $(INC)/mamiferonativo.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/mamiferonativo.cpp
 
-reptil.o : reptil.h
-	$(CC) $(CPPFLAGS) -c reptil.cpp
+reptil.o : $(SRC)/reptil.cpp $(INC)/reptil.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/reptil.cpp
 
-reptilexotico.o : reptilexotico.h
-	$(CC) $(CPPFLAGS) -c reptilexotico.cpp
+reptilexotico.o : $(SRC)/reptilexotico.cpp $(INC)/reptilexotico.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/reptilexotico.cpp
 
-reptilnativo.o : reptilnativo.h
-	$(CC) $(CPPFLAGS) -c reptilnativo.cpp
+reptilnativo.o : $(SRC)/reptilnativo.cpp $(INC)/reptilnativo.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/reptilnativo.cpp
 
-sistema.o : sistema.h
-	$(CC) $(CPPFLAGS) -c sistema.cpp
+sistema.o : $(SRC)/sistema.cpp $(INC)/sistema.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/sistema.cpp
 
-tratador.o : tratador.h
-	$(CC) $(CPPFLAGS) -c tratador.cpp
+tratador.o : $(SRC)/tratador.cpp $(INC)/tratador.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/tratador.cpp
 
-veterinario.o : veterinario.h
-	$(CC) $(CPPFLAGS) -c veterinario.cpp
+veterinario.o : $(SRC)/veterinario.cpp $(INC)/veterinario.h
+	$(CC) $(CPPFLAGS) -c $(SRC)/veterinario.cpp
 
 clean :
 	rm -f core $(PROG) $(OBJS)
