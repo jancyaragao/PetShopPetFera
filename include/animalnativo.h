@@ -10,7 +10,7 @@ using namespace std;
 class AnimalNativo : public AnimalSilvestre {
 	protected:
 		string m_uf_origem;
-		string	m_autorizacao;
+		string m_autorizacao;
 		
 		// Getters and Setters
 		void setUF_origem (string newUForigem);
@@ -20,7 +20,7 @@ class AnimalNativo : public AnimalSilvestre {
 		
 	public:
 		AnimalNativo ( void );
-		AnimalNativo (string uf_origem, string autorizacao);
+		AnimalNativo (string autorizacao_ibama, string uf_origem, string autorizacao);
 		~AnimalNativo ( void );
 };/* AnimalNativo */
 

@@ -4,9 +4,8 @@
 #include "../include/animalnativo.h"
 
 AnimalNativo::AnimalNativo ( void ) { /*empty*/ };
-
-AnimalNativo::AnimalNativo (string uf_origem, string autorizacao) {/*empty*/};
-
+AnimalNativo::AnimalNativo (string autorizacao_ibama, string uf_origem, string autorizacao):
+	AnimalSilvestre(autorizacao_ibama), m_uf_origem(uf_origem), m_autorizacao(autorizacao) {/*empty*/};
 AnimalNativo::~AnimalNativo ( void ) { /*empty*/ };
 
 void AnimalNativo::setUF_origem (string newUForigem){

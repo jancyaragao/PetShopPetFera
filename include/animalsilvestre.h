@@ -7,7 +7,7 @@ using namespace std;
 
 class AnimalSilvestre {
 	protected:
-		string autorizacao_ibama;
+		string m_autorizacao_ibama;
 
 	// Getters and Setters
 		void setAutorizacao_ibama (string newAutorizacao_ibama);
@@ -15,6 +15,7 @@ class AnimalSilvestre {
 
 	public:
 		AnimalSilvestre ( void );
+		AnimalSilvestre(string autorizacao_ibama);
 		~AnimalSilvestre ( void );
 };/* AnimalSilvestre */
 

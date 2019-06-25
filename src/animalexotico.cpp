@@ -4,9 +4,8 @@
 #include "../include/animalexotico.h"
 
 AnimalExotico::AnimalExotico ( void ) { /*empty*/ }
-
-AnimalExotico::AnimalExotico (string pais_origem, string cidade_origem) {/*empty*/}
-
+AnimalExotico::AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem):
+	AnimalSilvestre(autorizacao_ibama), m_pais_origem(pais_origem), m_cidade_origem(cidade_origem)  {/*empty*/}
 AnimalExotico::~AnimalExotico ( void ) { /*empyt*/ }
 
 void AnimalExotico::setPais_origem (string newPais_origem){

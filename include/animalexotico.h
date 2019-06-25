@@ -20,7 +20,7 @@ class AnimalExotico : public AnimalSilvestre {
 	
 	public:
 		AnimalExotico (void);
-		AnimalExotico (string pais_origem, string cidade_origem);
+		AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem);
 		~AnimalExotico (void);
 }; /* AnimalExotico */
 
