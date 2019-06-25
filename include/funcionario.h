@@ -14,7 +14,7 @@ class Funcionario {
 		string m_especialidade;
 	public:
 		Funcionario();
-		Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, string especialidade);
+		Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, string especialidade);
 		virtual ~Funcionario();
 
 		// Getters and Setters
@@ -30,8 +30,8 @@ class Funcionario {
 		virtual void setIdade(short new_idade) = 0;
 		virtual short getIdade() = 0;
 
-		virtual void setTipo_sanguineo(short new_tipo_sanguineo) = 0;
-		virtual short getTipo_sanguineo() = 0;
+		virtual void setTipo_sanguineo(string new_tipo_sanguineo) = 0;
+		virtual string getTipo_sanguineo() = 0;
 
 		virtual void setEspecialidade(string new_especialidade) = 0;
 		virtual string getEspecialidade() = 0;

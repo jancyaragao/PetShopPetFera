@@ -11,7 +11,8 @@ class Tratador: public Funcionario {
 		
 	public:
 		Tratador();
-		Tratador(int nivel_de_seguranca);
+		Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo,
+            string especialidade, int nivel_de_seguranca);
 		~Tratador();
 
 		// Getters and Setters
@@ -25,8 +26,8 @@ class Tratador: public Funcionario {
 		string getCpf();
 		void setIdade(short new_idade);
 		short getIdade();
-		void setTipo_sanguineo(short new_tipo_sanguineo);
-		short getTipo_sanguineo();
+		void setTipo_sanguineo(string new_tipo_sanguineo);
+		string getTipo_sanguineo();
 		void setEspecialidade(string new_especialidade);
 		string getEspecialidade();
 		

@@ -9,7 +9,7 @@ class ReptilNativo : public Reptil, public AnimalNativo {
         ReptilNativo ( void );
         ReptilNativo (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
-		string tipo_veneno, string uf_origem, string autorizacao);
+		string tipo_veneno, string autorizacao_ibama, string uf_origem);
         ~ReptilNativo ( void );
 };
 

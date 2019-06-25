@@ -9,7 +9,7 @@ class AnfibioNativo : public Anfibio, public AnimalNativo {
         AnfibioNativo ( void );
         AnfibioNativo (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-		string uf_origem, string autorizacao);
+		string autorizacao_ibama, string uf_origem);
         ~AnfibioNativo ( void );
 };
 

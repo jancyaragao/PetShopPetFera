@@ -10,7 +10,7 @@ class AnfibioExotico : public Anfibio, public AnimalExotico {
 
         AnfibioExotico (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-		string pais_origem, string cidade_origem);
+		string autorizacao_ibama, string pais_origem, string cidade_origem);
 
         ~AnfibioExotico ( void );
 };

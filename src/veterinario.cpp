@@ -43,10 +43,10 @@ short Veterinario::getIdade() {
 	return m_idade;
 }
 
-void Veterinario::setTipo_sanguineo(short new_tipo_sanguineo) {
+void Veterinario::setTipo_sanguineo(string new_tipo_sanguineo) {
 	m_tipo_sanguineo = new_tipo_sanguineo;
 }
-short Veterinario::getTipo_sanguineo() {
+string Veterinario::getTipo_sanguineo() {
 	return m_tipo_sanguineo;
 }
 

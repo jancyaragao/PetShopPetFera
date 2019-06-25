@@ -2,7 +2,7 @@
 using namespace std;
 
 Tratador::Tratador() { /*empty*/ }
-Tratador::Tratador(int id, string nome, string cpf, short idade, short tipo_sanguineo,
+Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo,
             string especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
             especialidade), m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
 Tratador::~Tratador() { /*empty*/ }
@@ -42,10 +42,10 @@ short Tratador::getIdade() {
 	return m_idade;
 }
 
-void Tratador::setTipo_sanguineo(short new_tipo_sanguineo) {
+void Tratador::setTipo_sanguineo(string new_tipo_sanguineo) {
 	m_tipo_sanguineo = new_tipo_sanguineo;
 }
-short Tratador::getTipo_sanguineo() {
+string Tratador::getTipo_sanguineo() {
 	return m_tipo_sanguineo;
 }
 
