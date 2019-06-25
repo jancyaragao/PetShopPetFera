@@ -8,9 +8,9 @@
 class AveExotico : public Ave, public AnimalExotico {
     public:
         AveExotico ( void );
-        AveExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-		double envergadura_das_asas, string autorizacao_ibama, string pais_origem, string cidade_origem);
+        AveExotico (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+		QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
+		double envergadura_das_asas, QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
         ~AveExotico ( void );
 };/* AveExotico */
 

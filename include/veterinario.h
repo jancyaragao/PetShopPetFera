@@ -1,7 +1,7 @@
 #ifndef _VETERINARIO_H_
 #define _VETERINARIO_H_
 
-#include <string>
+#include <QString>
 
 #include "./funcionario.h"
 
@@ -9,33 +9,33 @@ using namespace std;
 
 class Veterinario: public Funcionario {
 	protected:
-		string m_crmv;
+		QString m_crmv;
 		
 	public:
 		Veterinario();
-		Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
-        string especialidade, string crmv);
+		Veterinario(int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
+        QString especialidade, QString crmv);
 		~Veterinario();
 
 		// Getters and Setters
-		void setCrmv(string new_crmv);
-		string getCrmv();
+		void setCrmv(QString new_crmv);
+		QString getCrmv();
 
 		// Getters and Setters
 		void setNivel_de_seguranca(int new_nivel_de_seguranca);
 		int getNivel_de_seguranca();
 		void setId(int new_id);
 		int getId();
-		void setNome(string new_nome);
-		string getNome();
-		void setCpf(string new_cpf);
-		string getCpf();
+		void setNome(QString new_nome);
+		QString getNome();
+		void setCpf(QString new_cpf);
+		QString getCpf();
 		void setIdade(short new_idade);
 		short getIdade();
-		void setTipo_sanguineo(string new_tipo_sanguineo);
-		string getTipo_sanguineo();
-		void setEspecialidade(string new_especialidade);
-		string getEspecialidade();
+		void setTipo_sanguineo(QString new_tipo_sanguineo);
+		QString getTipo_sanguineo();
+		void setEspecialidade(QString new_especialidade);
+		QString getEspecialidade();
 		
 }; /* Veterinario */
 

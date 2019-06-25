@@ -4,8 +4,8 @@ using namespace std;
 
 Anfibio::Anfibio(void) { /*empty*/ }
 
-Anfibio::Anfibio(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta,
-				int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas)
+Anfibio::Anfibio(int id, QString classe, QString nome_cientifico, char sexo, double tamanho, QString dieta,
+				int id_veterinario, int id_tratador, QString nome_batismo, int total_de_mudas)
 				: Animal (id, classe, nome_cientifico, sexo, tamanho, dieta, id_veterinario, id_tratador,
 				nome_batismo), m_total_de_mudas(total_de_mudas)
 				{/*empty*/}
@@ -25,17 +25,17 @@ int Anfibio::getId() {
 	return m_id;
 }
 
-void Anfibio::setClasse(string new_classe) {
+void Anfibio::setClasse(QString new_classe) {
 	m_classe = new_classe;
 }
-string Anfibio::getClasse() {
+QString Anfibio::getClasse() {
 	return m_classe;
 }
 
-void Anfibio::setNome_cientifico(string new_nome_cientifico) {
+void Anfibio::setNome_cientifico(QString new_nome_cientifico) {
 	m_nome_cientifico = new_nome_cientifico;
 }
-string Anfibio::getNome_cientifico() {
+QString Anfibio::getNome_cientifico() {
 	return m_nome_cientifico;
 }
 
@@ -53,10 +53,10 @@ double Anfibio::getTamanho() {
 	return m_tamanho;
 }
 
-void Anfibio::setDieta(string new_dieta) {
+void Anfibio::setDieta(QString new_dieta) {
 	m_dieta = new_dieta;
 }
-string Anfibio::getDieta() {
+QString Anfibio::getDieta() {
 	return m_dieta;
 }
 
@@ -74,9 +74,9 @@ int Anfibio::getTratador() {
 	return m_tratador;
 }
 
-void Anfibio::setNome_batismo(string new_nome_batismo) {
+void Anfibio::setNome_batismo(QString new_nome_batismo) {
 	m_nome_batismo = new_nome_batismo;
 }
-string Anfibio::getNome_batismo() {
+QString Anfibio::getNome_batismo() {
 	return m_nome_batismo;
 }

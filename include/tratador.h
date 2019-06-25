@@ -11,8 +11,8 @@ class Tratador: public Funcionario {
 		
 	public:
 		Tratador();
-		Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo,
-            string especialidade, int nivel_de_seguranca);
+		Tratador(int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
+            QString especialidade, int nivel_de_seguranca);
 		~Tratador();
 
 		// Getters and Setters
@@ -20,16 +20,16 @@ class Tratador: public Funcionario {
 		int getNivel_de_seguranca();
 		void setId(int new_id);
 		int getId();
-		void setNome(string new_nome);
-		string getNome();
-		void setCpf(string new_cpf);
-		string getCpf();
+		void setNome(QString new_nome);
+		QString getNome();
+		void setCpf(QString new_cpf);
+		QString getCpf();
 		void setIdade(short new_idade);
 		short getIdade();
-		void setTipo_sanguineo(string new_tipo_sanguineo);
-		string getTipo_sanguineo();
-		void setEspecialidade(string new_especialidade);
-		string getEspecialidade();
+		void setTipo_sanguineo(QString new_tipo_sanguineo);
+		QString getTipo_sanguineo();
+		void setEspecialidade(QString new_especialidade);
+		QString getEspecialidade();
 		
 }; /* Tratador */
 
