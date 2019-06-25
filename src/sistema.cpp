@@ -16,6 +16,36 @@ string dieta, int veterinario, int tratador, string m_nome_batismo)
 	return true;*/
 //} /*Cadastro de Animal = Abstract Class
 
+bool Sistema::verificaIdAnimal(int id) {
+	map<int, Animal*>::iterator it;
+	it = animais.find(id);
+	if (it != animais.end()) {
+		return true;
+	}
+	return false;
+}
+
+bool Sistema::verificaIdFuncionario(int id) {
+	map<int, Funcionario*>::iterator it;
+	it = funcionarios.find(id);
+	if (it != funcionarios.end()) {
+		return true;
+	}
+	return false;
+}
+
+bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
+char fator_rh, string especialidade, int nivel_de_seguranca) {
+	Funcionario* novo = new Tratador(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, nivel_de_seguranca);
+	funcionarios.insert(id, novo);
+}
+
+bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
+char fator_rh, string especialidade, string crmv) {
+	Funcionario* novo = new Veterinario(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, crmv);
+	funcionarios.insert(id, novo);
+}
+
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo) 
 {

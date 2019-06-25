@@ -2,7 +2,9 @@
 using namespace std;
 
 Tratador::Tratador() { /*empty*/ }
-Tratador::Tratador(int nivel_de_seguranca):m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
+Tratador::Tratador(int id, string nome, string cpf, short idade, short tipo_sanguineo,
+            char fator_rh, string especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
+            fator_rh, especialidade), m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
 Tratador::~Tratador() { /*empty*/ }
 
 	void Tratador::setNivel_de_seguranca(int new_nivel_de_seguranca) {
