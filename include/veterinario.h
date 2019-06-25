@@ -13,8 +13,8 @@ class Veterinario: public Funcionario {
 		
 	public:
 		Veterinario();
-		Veterinario(int id, string nome, string cpf, short idade, short tipo_sanguineo,
-            string especialidade, string crmv);
+		Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
+        string especialidade, string crmv);
 		~Veterinario();
 
 		// Getters and Setters

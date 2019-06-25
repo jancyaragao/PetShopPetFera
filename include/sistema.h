@@ -45,21 +45,13 @@ class Sistema {
 		bool verificaIdFuncionario(int id);
 		/*Verifica id existe em Animal*/
 
-		// bool cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
-		// char fator_rh, string especialidade);
-		/*Cadastro Funcionario*/
+		bool cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
+		string especialidade, int nivel_de_seguranca);
+		/*Cadastro Tratador*/
 
-			bool cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
-			char fator_rh, string especialidade, int nivel_de_seguranca);
-			/*Cadastro Tratador*/
-
-			bool cadastrar_funcionario (int id, string nome, string cpf, short idade, short tipo_sanguineo,
-			char fator_rh, string especialidade, string crmv);
-			/*Cadastro Veterinario*/
-
-		// bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-		// string dieta, int veterinario, int tratador, string m_nome_batismo );
-		/*Cadastro Animal*/
+		bool cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
+		string especialidade, string crmv);
+		/*Cadastro Veterinario*/
 
 			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 			string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo);

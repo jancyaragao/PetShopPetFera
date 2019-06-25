@@ -4,18 +4,6 @@
 
 using namespace std;
 
-/*
-bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-string dieta, int veterinario, int tratador, string m_nome_batismo) 
-{
-	// Animal* novo = new Animal (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario,
-	// tratador, m_nome_batismo, "preto");
-
-	// animais.insert ({id,novo});
-
-	return true;*/
-//} /*Cadastro de Animal = Abstract Class
-
 bool Sistema::verificaIdAnimal(int id) {
 	map<int, Animal*>::iterator it;
 	it = animais.find(id);
@@ -36,17 +24,18 @@ bool Sistema::verificaIdFuncionario(int id) {
 
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
 string especialidade, int nivel_de_seguranca) {
-	Funcionario* novo = new Tratador(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, nivel_de_seguranca);
+	Funcionario* novo = new Tratador(id, nome, cpf, idade, tipo_sanguineo, especialidade,
+	nivel_de_seguranca);
 	funcionarios.insert({id, novo});
 	return true;
-}
+} /*cadastro tratador*/
 
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
 string especialidade, string crmv) {
-	Funcionario* novo = new Veterinario(id, nome, cpf, idade, tipo_sanguineo, fator_rh, especialidade, crmv);
+	Funcionario* novo = new Veterinario(id, nome, cpf, idade, tipo_sanguineo, especialidade, crmv);
 	funcionarios.insert({id, novo});
 	return true;
-}
+} /*cadastro veterinario*/
 
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo) 
@@ -59,21 +48,21 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 } /*Cadastro de Mamifero*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string uf_origem,
-	string autorizacao) {
+	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string autorizacao,
+	string uf_origem) {
 
 		Animal* novo = new MamiferoNativo (id, classe, m_nome_cientifico, sexo, tamanho, dieta,
-		veterinario, tratador, m_nome_batismo, m_cor_pelo, uf_origem, autorizacao);
+		veterinario, tratador, m_nome_batismo, m_cor_pelo, autorizacao, uf_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Mamifero Nativo*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string pais_origem,
-	string cidade_origem){
+	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string autorizacao,
+	string pais_origem, string cidade_origem){
 		
 		Animal* novo = new MamiferoExotico (id, classe, m_nome_cientifico, sexo, tamanho, dieta,
-		veterinario, tratador, m_nome_batismo, m_cor_pelo, pais_origem, cidade_origem);
+		veterinario, tratador, m_nome_batismo, m_cor_pelo, autorizacao, pais_origem, cidade_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Mamifero Exotico*/
@@ -89,18 +78,18 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno,
-	string uf_origem, string autorizacao){
+	string autorizacao, string uf_origem){
 		Animal* novo = new ReptilNativo (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario,
-		tratador, m_nome_batismo, m_venenoso, tipo_veneno, uf_origem, autorizacao);
+		tratador, m_nome_batismo, m_venenoso, tipo_veneno, autorizacao, uf_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Reptil Nativo*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno,
-	string pais_origem, string cidade_origem) {
+	string autorizacao, string pais_origem, string cidade_origem) {
 		Animal* novo = new ReptilExotico (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario,
-		tratador, m_nome_batismo, m_venenoso, tipo_veneno, pais_origem, cidade_origem);
+		tratador, m_nome_batismo, m_venenoso, tipo_veneno, autorizacao, pais_origem, cidade_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Reptil Exotico*/
@@ -117,18 +106,20 @@ double envergadura_das_asas)
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-	double envergadura_das_asas, string uf_origem, string autorizacao){
+	double envergadura_das_asas, string autorizacao,string uf_origem){
 		Animal* novo = new AveNativo (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario,
-		tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas, uf_origem, autorizacao);
+		tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas, autorizacao, uf_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Ave Nativa*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-	double envergadura_das_asas, string pais_origem, string cidade_origem){
+	double envergadura_das_asas, string autorizacao, string pais_origem, string cidade_origem){
 		Animal* novo = new AveExotico (id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario,
-		tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas, pais_origem, cidade_origem);
+		tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas, autorizacao, pais_origem,
+		cidade_origem);
+
 		animais.insert ({id,novo});
 		return true;
 	} /*Ave Exotica*/
@@ -143,19 +134,19 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 } /*Anfibio*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
-	string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-	string uf_origem, string autorizacao){
+	string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas, 
+	string autorizacao, string uf_origem){
 		Animal* novo = new AnfibioNativo (id, classe, nome_cientifico, sexo, tamanho, dieta, id_veterinario,
-		id_tratador, nome_batismo, total_de_mudas, uf_origem, autorizacao);
+		id_tratador, nome_batismo, total_de_mudas, autorizacao, uf_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Anfibio Nativo*/
 
 	bool Sistema::cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-	string pais_origem, string cidade_origem) {
+	string autorizacao, string pais_origem, string cidade_origem) {
 		Animal* novo = new AnfibioExotico (id, classe, nome_cientifico, sexo, tamanho, dieta, id_veterinario,
-		id_tratador, nome_batismo, total_de_mudas, pais_origem, cidade_origem);
+		id_tratador, nome_batismo, total_de_mudas, autorizacao, pais_origem, cidade_origem);
 		animais.insert ({id,novo});
 		return true;
 	} /*Anfibio Exotico*/

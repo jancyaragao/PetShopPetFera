@@ -3,7 +3,7 @@
 using namespace std;
 
 Veterinario::Veterinario() { /*empty*/ }
-Veterinario::Veterinario(int id, string nome, string cpf, short idade, short tipo_sanguineo,
+Veterinario::Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
             string especialidade, string crmv) : Funcionario(id, nome, cpf, idade, tipo_sanguineo,
             especialidade), m_crmv(crmv) { /*empty*/ }
 Veterinario::~Veterinario() { /*empty*/ }
