@@ -2,8 +2,8 @@
 using namespace std;
 
 Ave::Ave() { /*empty*/ }
-Ave::Ave(int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-        QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
+Ave::Ave(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+        string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
         double envergadura_das_asas) : Animal(id, classe, m_nome_cientifico, sexo, tamanho, dieta,
         veterinario, tratador, m_nome_batismo), m_tamanho_do_bico_cm(tamanho_do_bico_cm),
         m_envergadura_das_asas(envergadura_das_asas)
@@ -32,17 +32,17 @@ int Ave::getId() {
 	return m_id;
 }
 
-void Ave::setClasse(QString new_classe) {
+void Ave::setClasse(string new_classe) {
 	m_classe = new_classe;
 }
-QString Ave::getClasse() {
+string Ave::getClasse() {
 	return m_classe;
 }
 
-void Ave::setNome_cientifico(QString new_nome_cientifico) {
+void Ave::setNome_cientifico(string new_nome_cientifico) {
 	m_nome_cientifico = new_nome_cientifico;
 }
-QString Ave::getNome_cientifico() {
+string Ave::getNome_cientifico() {
 	return m_nome_cientifico;
 }
 
@@ -60,10 +60,10 @@ double Ave::getTamanho() {
 	return m_tamanho;
 }
 
-void Ave::setDieta(QString new_dieta) {
+void Ave::setDieta(string new_dieta) {
 	m_dieta = new_dieta;
 }
-QString Ave::getDieta() {
+string Ave::getDieta() {
 	return m_dieta;
 }
 
@@ -81,9 +81,9 @@ int Ave::getTratador() {
 	return m_tratador;
 }
 
-void Ave::setNome_batismo(QString new_nome_batismo) {
+void Ave::setNome_batismo(string new_nome_batismo) {
 	m_nome_batismo = new_nome_batismo;
 }
-QString Ave::getNome_batismo() {
+string Ave::getNome_batismo() {
 	return m_nome_batismo;
 }

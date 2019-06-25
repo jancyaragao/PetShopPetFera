@@ -7,9 +7,9 @@
 class AnfibioNativo : public Anfibio, public AnimalNativo {
     public:
         AnfibioNativo ( void );
-        AnfibioNativo (int id, QString classe, QString nome_cientifico, char sexo, double tamanho,
-		QString dieta, int id_veterinario, int id_tratador, QString nome_batismo, int total_de_mudas,
-		QString autorizacao_ibama, QString uf_origem);
+        AnfibioNativo (int id, string classe, string nome_cientifico, char sexo, double tamanho,
+		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
+		string autorizacao_ibama, string uf_origem);
         ~AnfibioNativo ( void );
 };
 

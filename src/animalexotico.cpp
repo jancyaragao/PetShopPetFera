@@ -1,23 +1,23 @@
 #include <iostream>
-#include <QString>
+#include <string>
 
 #include "../include/animalexotico.h"
 
 AnimalExotico::AnimalExotico ( void ) { /*empty*/ }
-AnimalExotico::AnimalExotico (QString autorizacao_ibama, QString pais_origem, QString cidade_origem):
+AnimalExotico::AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem):
 	AnimalSilvestre(autorizacao_ibama), m_pais_origem(pais_origem), m_cidade_origem(cidade_origem)  {/*empty*/}
 AnimalExotico::~AnimalExotico ( void ) { /*empyt*/ }
 
-void AnimalExotico::setPais_origem (QString newPais_origem){
+void AnimalExotico::setPais_origem (string newPais_origem){
 	m_pais_origem = newPais_origem;
 };
-QString AnimalExotico::getPais_origem ( void ){
+string AnimalExotico::getPais_origem ( void ){
 	return m_pais_origem;
 };
 
-void AnimalExotico::setCidade_origem (QString newCidade_origem){
+void AnimalExotico::setCidade_origem (string newCidade_origem){
 	m_cidade_origem = newCidade_origem;
 }
-QString AnimalExotico::getCidade_origem (void){
+string AnimalExotico::getCidade_origem (void){
 	return m_cidade_origem;
 }

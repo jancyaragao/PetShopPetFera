@@ -7,9 +7,9 @@
 class MamiferoExotico : public Mamifero, public AnimalExotico {
     public:
         MamiferoExotico ( void );
-        MamiferoExotico (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-		QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString m_cor_pelo,
-		QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
+        MamiferoExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,
+		string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~MamiferoExotico ( void );
 };
 

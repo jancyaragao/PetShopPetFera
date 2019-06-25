@@ -2,8 +2,8 @@
 using namespace std;
 
 Tratador::Tratador() { /*empty*/ }
-Tratador::Tratador(int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
-            QString especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
+Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo,
+            string especialidade, int nivel_de_seguranca): Funcionario(id, nome, cpf, idade, tipo_sanguineo,
             especialidade), m_nivel_de_seguranca(nivel_de_seguranca) { /*empty*/ }
 Tratador::~Tratador() { /*empty*/ }
 
@@ -21,17 +21,17 @@ int Tratador::getId() {
 	return m_id;
 }
 
-void Tratador::setNome(QString new_nome) {
+void Tratador::setNome(string new_nome) {
 	m_nome = new_nome;
 }
-QString Tratador::getNome() {
+string Tratador::getNome() {
 	return m_nome;
 }
 
-void Tratador::setCpf(QString new_cpf) {
+void Tratador::setCpf(string new_cpf) {
 	m_cpf = new_cpf;
 }
-QString Tratador::getCpf() {
+string Tratador::getCpf() {
 	return m_cpf;
 }
 
@@ -42,16 +42,16 @@ short Tratador::getIdade() {
 	return m_idade;
 }
 
-void Tratador::setTipo_sanguineo(QString new_tipo_sanguineo) {
+void Tratador::setTipo_sanguineo(string new_tipo_sanguineo) {
 	m_tipo_sanguineo = new_tipo_sanguineo;
 }
-QString Tratador::getTipo_sanguineo() {
+string Tratador::getTipo_sanguineo() {
 	return m_tipo_sanguineo;
 }
 
-void Tratador::setEspecialidade(QString new_especialidade) {
+void Tratador::setEspecialidade(string new_especialidade) {
 	m_especialidade = new_especialidade;
 }
-QString Tratador::getEspecialidade() {
+string Tratador::getEspecialidade() {
 	return m_especialidade;
 }

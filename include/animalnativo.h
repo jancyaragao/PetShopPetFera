@@ -1,7 +1,7 @@
 #ifndef _ANIMAL_NATIVO_H
 #define _ANIMAL_NATIVO_H
 
-#include <QString>
+#include <string>
 
 #include "./animalsilvestre.h"
 
@@ -9,15 +9,15 @@ using namespace std;
 
 class AnimalNativo : public AnimalSilvestre {
 	protected:
-		QString m_uf_origem;
+		string m_uf_origem;
 		
 		// Getters and Setters
-		void setUF_origem (QString newUForigem);
-		QString getUF_origem ( void );
+		void setUF_origem (string newUForigem);
+		string getUF_origem ( void );
 		
 	public:
 		AnimalNativo ( void );
-		AnimalNativo (QString autorizacao_ibama, QString uf_origem);
+		AnimalNativo (string autorizacao_ibama, string uf_origem);
 		~AnimalNativo ( void );
 };/* AnimalNativo */
 

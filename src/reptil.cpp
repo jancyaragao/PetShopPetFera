@@ -1,10 +1,10 @@
 #include "../include/reptil.h"
-#include <QString>
+#include <string>
 using namespace std;
 
 Reptil::Reptil() { /*empty*/ }
-Reptil::Reptil(int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-		QString dieta, int veterinario, int tratador, QString m_nome_batismo, bool venenoso, QString tipo_veneno)
+Reptil::Reptil(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, bool venenoso, string tipo_veneno)
 		: Animal(id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador, m_nome_batismo),
 		m_venenoso(venenoso), m_tipo_veneno(tipo_veneno)
 { /*empty*/ }
@@ -18,10 +18,10 @@ bool Reptil::getVenenoso() {
 	return m_venenoso;
 }
 
-void Reptil::setTipo_veneno(QString new_tipo_veneno) {
+void Reptil::setTipo_veneno(string new_tipo_veneno) {
 	m_tipo_veneno = new_tipo_veneno;
 }
-QString Reptil::getTipo_veneno() {
+string Reptil::getTipo_veneno() {
 	return m_tipo_veneno;
 }
 
@@ -32,17 +32,17 @@ int Reptil::getId() {
 	return m_id;
 }
 
-void Reptil::setClasse(QString new_classe) {
+void Reptil::setClasse(string new_classe) {
 	m_classe = new_classe;
 }
-QString Reptil::getClasse() {
+string Reptil::getClasse() {
 	return m_classe;
 }
 
-void Reptil::setNome_cientifico(QString new_nome_cientifico) {
+void Reptil::setNome_cientifico(string new_nome_cientifico) {
 	m_nome_cientifico = new_nome_cientifico;
 }
-QString Reptil::getNome_cientifico() {
+string Reptil::getNome_cientifico() {
 	return m_nome_cientifico;
 }
 
@@ -60,10 +60,10 @@ double Reptil::getTamanho() {
 	return m_tamanho;
 }
 
-void Reptil::setDieta(QString new_dieta) {
+void Reptil::setDieta(string new_dieta) {
 	m_dieta = new_dieta;
 }
-QString Reptil::getDieta() {
+string Reptil::getDieta() {
 	return m_dieta;
 }
 
@@ -81,9 +81,9 @@ int Reptil::getTratador() {
 	return m_tratador;
 }
 
-void Reptil::setNome_batismo(QString new_nome_batismo) {
+void Reptil::setNome_batismo(string new_nome_batismo) {
 	m_nome_batismo = new_nome_batismo;
 }
-QString Reptil::getNome_batismo() {
+string Reptil::getNome_batismo() {
 	return m_nome_batismo;
 }

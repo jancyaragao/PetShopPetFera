@@ -1,17 +1,17 @@
 #include "../include/veterinario.h"
-#include <QString>
+#include <string>
 using namespace std;
 
 Veterinario::Veterinario() { /*empty*/ }
-Veterinario::Veterinario(int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
-            QString especialidade, QString crmv) : Funcionario(id, nome, cpf, idade, tipo_sanguineo,
+Veterinario::Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
+            string especialidade, string crmv) : Funcionario(id, nome, cpf, idade, tipo_sanguineo,
             especialidade), m_crmv(crmv) { /*empty*/ }
 Veterinario::~Veterinario() { /*empty*/ }
 
-	void Veterinario::setCrmv(QString new_crmv) {
+	void Veterinario::setCrmv(string new_crmv) {
 		m_crmv = new_crmv;
 	}
-	QString Veterinario::getCrmv() {
+	string Veterinario::getCrmv() {
 		return m_crmv;
 	}
 
@@ -22,17 +22,17 @@ int Veterinario::getId() {
 	return m_id;
 }
 
-void Veterinario::setNome(QString new_nome) {
+void Veterinario::setNome(string new_nome) {
 	m_nome = new_nome;
 }
-QString Veterinario::getNome() {
+string Veterinario::getNome() {
 	return m_nome;
 }
 
-void Veterinario::setCpf(QString new_cpf) {
+void Veterinario::setCpf(string new_cpf) {
 	m_cpf = new_cpf;
 }
-QString Veterinario::getCpf() {
+string Veterinario::getCpf() {
 	return m_cpf;
 }
 
@@ -43,16 +43,16 @@ short Veterinario::getIdade() {
 	return m_idade;
 }
 
-void Veterinario::setTipo_sanguineo(QString new_tipo_sanguineo) {
+void Veterinario::setTipo_sanguineo(string new_tipo_sanguineo) {
 	m_tipo_sanguineo = new_tipo_sanguineo;
 }
-QString Veterinario::getTipo_sanguineo() {
+string Veterinario::getTipo_sanguineo() {
 	return m_tipo_sanguineo;
 }
 
-void Veterinario::setEspecialidade(QString new_especialidade) {
+void Veterinario::setEspecialidade(string new_especialidade) {
 	m_especialidade = new_especialidade;
 }
-QString Veterinario::getEspecialidade() {
+string Veterinario::getEspecialidade() {
 	return m_especialidade;
 }
