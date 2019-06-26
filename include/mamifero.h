@@ -1,7 +1,7 @@
 #ifndef MAMIFERO_H
 #define MAMIFERO_H
 
-#include <string>
+#include <QString>
 
 #include "./animal.h"
 
@@ -9,36 +9,36 @@ using namespace std;
 
 class Mamifero: public Animal {
 	protected:
-		string m_cor_pelo;
+		QString m_cor_pelo;
 	public:
 		Mamifero();
-		Mamifero(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, string cor_pelo);
+		Mamifero(int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString cor_pelo);
 		~Mamifero();
 
 		/*Animal*/
 			void setId(int new_id);
 	        int getId();
-	        void setClasse(string new_classe);
-	        string getClasse();
-	        void setNome_cientifico(string new_nome_cientifico);
-	        string getNome_cientifico();
+	        void setClasse(QString new_classe);
+	        QString getClasse();
+	        void setNome_cientifico(QString new_nome_cientifico);
+	        QString getNome_cientifico();
 	        void setSexo(char new_sexo);
 	        char getSexo();
 	        void setTamanho(double new_tamanho);
 	        double getTamanho();
-	        void setDieta(string new_dieta);
-	        string getDieta();
+	        void setDieta(QString new_dieta);
+	        QString getDieta();
 	        void setVeterinario(int new_veterinario);
 	        int getVeterinario();
 	        void setTratador(int new_tratador);
 	        int getTratador();
-	        void setNome_batismo(string new_nome_batismo);
-	        string getNome_batismo();
+	        void setNome_batismo(QString new_nome_batismo);
+	        QString getNome_batismo();
 
         // Getters and Setters
-		void setCor_pelo(string new_cor_pelo);
-		string getCor_pelo();
+		void setCor_pelo(QString new_cor_pelo);
+		QString getCor_pelo();
 
 }; /* Mamífero */
 

@@ -1,7 +1,7 @@
 #ifndef _ANIMAL_EXOTICO_H_
 #define _ANIMAL_EXOTICO_H_
 
-#include <string>
+#include <QString>
 
 using namespace std;
 
@@ -9,18 +9,18 @@ using namespace std;
 
 class AnimalExotico : public AnimalSilvestre {
 	protected:
-		string m_pais_origem;
-		string m_cidade_origem;
+		QString m_pais_origem;
+		QString m_cidade_origem;
 
-		void setPais_origem (string newPais_origem);
-		string getPais_origem (void);
+		void setPais_origem (QString newPais_origem);
+		QString getPais_origem (void);
 
-		void setCidade_origem (string newCidade_origem);
-		string getCidade_origem (void);
+		void setCidade_origem (QString newCidade_origem);
+		QString getCidade_origem (void);
 	
 	public:
 		AnimalExotico (void);
-		AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem);
+		AnimalExotico (QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
 		~AnimalExotico (void);
 }; /* AnimalExotico */
 

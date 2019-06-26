@@ -1,21 +1,21 @@
 #ifndef _ANIMAL_SILVESTRE_H_
 #define _ANIMAL_SILVESTRE_H_
 
-#include <string>
+#include <QString>
 
 using namespace std;
 
 class AnimalSilvestre {
 	protected:
-		string m_autorizacao_ibama;
+		QString m_autorizacao_ibama;
 
 	// Getters and Setters
-		void setAutorizacao_ibama (string newAutorizacao_ibama);
-		string getAutorizacao_ibama ( void );
+		void setAutorizacao_ibama (QString newAutorizacao_ibama);
+		QString getAutorizacao_ibama ( void );
 
 	public:
 		AnimalSilvestre ( void );
-		AnimalSilvestre(string autorizacao_ibama);
+		AnimalSilvestre(QString autorizacao_ibama);
 		~AnimalSilvestre ( void );
 };/* AnimalSilvestre */
 

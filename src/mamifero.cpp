@@ -1,10 +1,10 @@
 #include "../include/mamifero.h"
-#include <string>
+#include <QString>
 using namespace std;
 
 Mamifero::Mamifero() { /*empty*/ }
-Mamifero::Mamifero(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, string cor_pelo)
+Mamifero::Mamifero(int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString cor_pelo)
 				: Animal(id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador,
 				m_nome_batismo),
 				m_cor_pelo(cor_pelo)
@@ -12,10 +12,10 @@ Mamifero::Mamifero(int id, string classe, string m_nome_cientifico, char sexo, d
 				
 Mamifero::~Mamifero() { /*empty*/ }
 
-void Mamifero::setCor_pelo(string new_cor_pelo) {
+void Mamifero::setCor_pelo(QString new_cor_pelo) {
 	m_cor_pelo = new_cor_pelo;
 }
-string Mamifero::getCor_pelo() {
+QString Mamifero::getCor_pelo() {
 	return m_cor_pelo;
 }
 
@@ -26,17 +26,17 @@ int Mamifero::getId() {
 	return m_id;
 }
 
-void Mamifero::setClasse(string new_classe) {
+void Mamifero::setClasse(QString new_classe) {
 	m_classe = new_classe;
 }
-string Mamifero::getClasse() {
+QString Mamifero::getClasse() {
 	return m_classe;
 }
 
-void Mamifero::setNome_cientifico(string new_nome_cientifico) {
+void Mamifero::setNome_cientifico(QString new_nome_cientifico) {
 	m_nome_cientifico = new_nome_cientifico;
 }
-string Mamifero::getNome_cientifico() {
+QString Mamifero::getNome_cientifico() {
 	return m_nome_cientifico;
 }
 
@@ -54,10 +54,10 @@ double Mamifero::getTamanho() {
 	return m_tamanho;
 }
 
-void Mamifero::setDieta(string new_dieta) {
+void Mamifero::setDieta(QString new_dieta) {
 	m_dieta = new_dieta;
 }
-string Mamifero::getDieta() {
+QString Mamifero::getDieta() {
 	return m_dieta;
 }
 
@@ -75,9 +75,9 @@ int Mamifero::getTratador() {
 	return m_tratador;
 }
 
-void Mamifero::setNome_batismo(string new_nome_batismo) {
+void Mamifero::setNome_batismo(QString new_nome_batismo) {
 	m_nome_batismo = new_nome_batismo;
 }
-string Mamifero::getNome_batismo() {
+QString Mamifero::getNome_batismo() {
 	return m_nome_batismo;
 }

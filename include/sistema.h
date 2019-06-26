@@ -1,7 +1,7 @@
 #ifndef _SISTEMA_H_
 #define _SISTEMA_H_
 
-#include <string>
+#include <QString>
 #include <fstream>
 #include <map>
 
@@ -48,69 +48,69 @@ class Sistema {
 		bool verificaIdFuncionario(int id);
 		/*Verifica id existe em Animal*/
 
-		bool cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
-		string especialidade, int nivel_de_seguranca);
+		bool cadastrar_funcionario (int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
+		QString especialidade, int nivel_de_seguranca);
 		/*Cadastro Tratador*/
 
-		bool cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
-		string especialidade, string crmv);
+		bool cadastrar_funcionario (int id, QString nome, QString cpf, short idade, QString tipo_sanguineo,
+		QString especialidade, QString crmv);
 		/*Cadastro Veterinario*/
 
-			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-			string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo);
+			bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+			QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString m_cor_pelo);
 			/*Cadastrar Mamifero*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,
-				string autorizacao_ibama, string uf_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString m_cor_pelo,
+				QString autorizacao_ibama, QString uf_origem);
 				/*Cadastrar Mamifero Nativo*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,
-				string autorizacao_ibama, string pais_origem, string cidade_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString m_cor_pelo,
+				QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
 				/*Cadastrar Mamifero Exotico*/
 
-			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-			string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno);
+			bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+			QString dieta, int veterinario, int tratador, QString m_nome_batismo, bool m_venenoso, QString tipo_veneno);
 			/*Cadastrar Reptil*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
-				string tipo_veneno, string autorizacao_ibama, string uf_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, bool m_venenoso,
+				QString tipo_veneno, QString autorizacao_ibama, QString uf_origem);
 				/*Cadastrar Reptil Nativo*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
-				string tipo_veneno, string autorizacao_ibama, string pais_origem, string cidade_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, bool m_venenoso,
+				QString tipo_veneno, QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
 				/*Cadastrar Reptil Exotico*/		
 
-			bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-			string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
+			bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+			QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
 			double envergadura_das_asas);
 			/*Cadastrar Ave*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-				double envergadura_das_asas, string autorizacao_ibama, string uf_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
+				double envergadura_das_asas, QString autorizacao_ibama, QString uf_origem);
 				/*Cadastrar Ave Nativa*/
 
-				bool cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
-				string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
-				double envergadura_das_asas, string autorizacao_ibama, string pais_origem, string cidade_origem);
+				bool cadastrar_animal (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
+				QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
+				double envergadura_das_asas, QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
 				/*Cadastrar Ave Exotica*/
 
-			bool cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
-			string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas);
+			bool cadastrar_animal (int id, QString classe, QString nome_cientifico, char sexo, double tamanho,
+			QString dieta, int id_veterinario, int id_tratador, QString nome_batismo, int total_de_mudas);
 			/*Cadastrar Anfibio*/
 
-				bool cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
-				string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-				string autorizacao_ibama, string uf_origem);
+				bool cadastrar_animal (int id, QString classe, QString nome_cientifico, char sexo, double tamanho,
+				QString dieta, int id_veterinario, int id_tratador, QString nome_batismo, int total_de_mudas,
+				QString autorizacao_ibama, QString uf_origem);
 				/*Cadastrar Anfibio Nativio*/
 
-				bool cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
-				string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
-				string autorizacao_ibama, string pais_origem, string cidade_origem);
+				bool cadastrar_animal (int id, QString classe, QString nome_cientifico, char sexo, double tamanho,
+				QString dieta, int id_veterinario, int id_tratador, QString nome_batismo, int total_de_mudas,
+				QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
 				/*Cadastrar Anfibio Exotico*/
 
 		// STUB ===>
