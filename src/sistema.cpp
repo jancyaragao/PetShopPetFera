@@ -255,8 +255,8 @@ string dieta, int veterinario, int tratador, string nome_batismo, int total_de_m
 			it->second->setTratador(tratador);
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Anfibio*>(it->second)->setTotal_de_mudas(total_de_mudas);
-			// dynamic_cast<AnfibioNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<AnfibioNativo*>(it->second)->setUf_origem(uf_origem);
+			dynamic_cast<AnfibioNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<AnfibioNativo*>(it->second)->setUF_origem(uf_origem);
 			return true;
 		}
 		return false;
@@ -277,9 +277,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, int total_de_m
 			it->second->setTratador(tratador);
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Anfibio*>(it->second)->setTotal_de_mudas(total_de_mudas);
-			// dynamic_cast<AnfibioExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<AnfibioExotico*>(it->second)->setPais_origem(pais_origem);
-			// dynamic_cast<AnfibioExotico*>(it->second)->setCidade_origem(cidade_origem);
+			dynamic_cast<AnfibioExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<AnfibioExotico*>(it->second)->setPais_origem(pais_origem);
+			dynamic_cast<AnfibioExotico*>(it->second)->setCidade_origem(cidade_origem);
 			return true;
 		}
 		return false;
@@ -322,8 +322,8 @@ double envergadura_das_asas) {
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Ave*>(it->second)->setTamanho_do_bico_cm(tamanho_do_bico_cm);
 			dynamic_cast<Ave*>(it->second)->setEnvergaruda_das_asas(envergadura_das_asas);
-			// dynamic_cast<AveNativa*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<AveNativa*>(it->second)->setUf_origem(uf_origem);
+			dynamic_cast<AveNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<AveNativo*>(it->second)->setUF_origem(uf_origem);
 			return true;
 		}
 		return false;
@@ -345,9 +345,9 @@ double envergadura_das_asas) {
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Ave*>(it->second)->setTamanho_do_bico_cm(tamanho_do_bico_cm);
 			dynamic_cast<Ave*>(it->second)->setEnvergaruda_das_asas(envergadura_das_asas);
-			// dynamic_cast<AveExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<AveExotico*>(it->second)->setPais_origem(pais_origem);
-			// dynamic_cast<AveExotico*>(it->second)->setCidade_origem(cidade_origem);
+			dynamic_cast<AveExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<AveExotico*>(it->second)->setPais_origem(pais_origem);
+			dynamic_cast<AveExotico*>(it->second)->setCidade_origem(cidade_origem);
 			return true;
 		}
 		return false;
@@ -387,8 +387,8 @@ string dieta, int veterinario, int tratador, string nome_batismo, string cor_pel
 					it->second->setTratador(tratador);
 					it->second->setNome_batismo(nome_batismo);
 					dynamic_cast<Mamifero*>(it->second)->setCor_pelo(cor_pelo);
-					//dynamic_cast<MamiferoNativo*>(it->second)->setAutorizacao_ibama;
-					//dynamic_cast<MamiferoNativo*>(it->second)->setUf_origem;
+					dynamic_cast<MamiferoNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+					dynamic_cast<MamiferoNativo*>(it->second)->setUF_origem(uf_origem);
 					return true;
 				}
 				return false;
@@ -409,9 +409,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, string cor_pel
 					it->second->setTratador(tratador);
 					it->second->setNome_batismo(nome_batismo);
 					dynamic_cast<Mamifero*>(it->second)->setCor_pelo(cor_pelo);
-					//dynamic_cast<MamiferoExotico*>(it->second)->setAutorizacao_ibama;
-					//dynamic_cast<MamiferoExotico*>(it->second)->setPais_origem;
-					//dynamic_cast<MamiferoExotico*>(it->second)->setCidade_origem;
+					dynamic_cast<MamiferoExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+					dynamic_cast<MamiferoExotico*>(it->second)->setPais_origem(pais_origem);
+					dynamic_cast<MamiferoExotico*>(it->second)->setCidade_origem(cidade_origem);
 					return true;
 				}
 				return false;
@@ -453,8 +453,8 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Reptil*>(it->second)->setVenenoso(venenoso);
 			dynamic_cast<Reptil*>(it->second)->setTipo_veneno(tipo_veneno);
-			// dynamic_cast<ReptilNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<ReptilNativo*>(it->second)->setUf_origem(uf_origem);
+			dynamic_cast<ReptilNativo*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<ReptilNativo*>(it->second)->setUF_origem(uf_origem);
 			return true;
 		}
 		return false;
@@ -476,9 +476,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 			it->second->setNome_batismo(nome_batismo);
 			dynamic_cast<Reptil*>(it->second)->setVenenoso(venenoso);
 			dynamic_cast<Reptil*>(it->second)->setTipo_veneno(tipo_veneno);
-			// dynamic_cast<ReptilExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
-			// dynamic_cast<ReptilExotico*>(it->second)->setPais_origem(pais_origem);
-			// dynamic_cast<ReptilExotico*>(it->second)->setCidade_origem(cidade_origem);
+			dynamic_cast<ReptilExotico*>(it->second)->setAutorizacao_ibama(autorizacao_ibama);
+			dynamic_cast<ReptilExotico*>(it->second)->setPais_origem(pais_origem);
+			dynamic_cast<ReptilExotico*>(it->second)->setCidade_origem(cidade_origem);
 			return true;
 		}
 		return false;

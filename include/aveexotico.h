@@ -19,6 +19,16 @@ class AveExotico : public Ave, public AnimalExotico {
 		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
 		double envergadura_das_asas, string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~AveExotico ( void );
+
+        // Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setPais_origem (string newPais_origem);
+		string getPais_origem (void);
+
+		void setCidade_origem (string newCidade_origem);
+		string getCidade_origem (void);
 };/* AveExotico */
 
 #endif

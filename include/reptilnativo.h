@@ -18,6 +18,13 @@ class ReptilNativo : public Reptil, public AnimalNativo {
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
 		string tipo_veneno, string autorizacao_ibama, string uf_origem);
         ~ReptilNativo ( void );
+
+        // Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setUF_origem (string newUForigem);
+		string getUF_origem ( void );
 };
 
 #endif

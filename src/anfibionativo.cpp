@@ -7,3 +7,17 @@ AnfibioNativo::AnfibioNativo (int id, string classe, string nome_cientifico, cha
     string autorizacao_ibama, string uf_origem):Anfibio(id, classe, nome_cientifico, sexo, tamanho, dieta,
     id_veterinario, id_tratador, nome_batismo, total_de_mudas), AnimalNativo(autorizacao_ibama, uf_origem){/*empty*/}
 AnfibioNativo::~AnfibioNativo() {/*empty*/}
+
+void AnfibioNativo::setAutorizacao_ibama (string newAutorizacao_ibama) {
+    m_autorizacao_ibama = newAutorizacao_ibama;
+}
+string AnfibioNativo::getAutorizacao_ibama ( void ) {
+    return m_autorizacao_ibama;
+}
+
+void AnfibioNativo::setUF_origem (string newUForigem) {
+    m_uf_origem = newUForigem;
+}
+string AnfibioNativo::getUF_origem ( void ) {
+    return m_uf_origem;
+}

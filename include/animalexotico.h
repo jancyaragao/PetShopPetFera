@@ -12,15 +12,20 @@ class AnimalExotico : public AnimalSilvestre {
 		string m_pais_origem;
 		string m_cidade_origem;
 
-		void setPais_origem (string newPais_origem);
-		string getPais_origem (void);
-
-		void setCidade_origem (string newCidade_origem);
-		string getCidade_origem (void);
 	public:
 		AnimalExotico (void);
 		AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem);
-		~AnimalExotico (void);
+		virtual ~AnimalExotico (void);
+
+		// Getters and Setters
+		virtual void setPais_origem (string newPais_origem) = 0;
+		virtual string getPais_origem (void) = 0;
+
+		virtual void setCidade_origem (string newCidade_origem) = 0;
+		virtual string getCidade_origem (void) = 0;
+
+		virtual void setAutorizacao_ibama (string newAutorizacao_ibama) = 0;
+		virtual string getAutorizacao_ibama ( void ) = 0;
 }; /* AnimalExotico */
 
 #endif

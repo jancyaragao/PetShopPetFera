@@ -62,7 +62,7 @@ class Animal {
 		// 	return A.salvarAnimal(o);
 		// }
 
-		virtual void imprime()=0;
+		virtual void imprime() = 0;
 
 }; /* Animal */
 

@@ -14,12 +14,20 @@ class AnfibioExotico : public Anfibio, public AnimalExotico {
 		}
     public:
         AnfibioExotico ( void );
-
         AnfibioExotico (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
 		string autorizacao_ibama, string pais_origem, string cidade_origem);
-
         ~AnfibioExotico ( void );
+
+		// Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setPais_origem (string newPais_origem);
+		string getPais_origem (void);
+
+		void setCidade_origem (string newCidade_origem);
+		string getCidade_origem (void);
 };
 
 #endif

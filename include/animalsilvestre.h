@@ -9,14 +9,14 @@ class AnimalSilvestre {
 	protected:
 		string m_autorizacao_ibama;
 
-	// Getters and Setters
-		void setAutorizacao_ibama (string newAutorizacao_ibama);
-		string getAutorizacao_ibama ( void );
-
 	public:
 		AnimalSilvestre ( void );
 		AnimalSilvestre(string autorizacao_ibama);
-		~AnimalSilvestre ( void );
+		virtual ~AnimalSilvestre ( void );
+
+		// Getters and Setters
+		virtual void setAutorizacao_ibama (string newAutorizacao_ibama) = 0;
+		virtual string getAutorizacao_ibama ( void ) = 0;
 };/* AnimalSilvestre */
 
 

@@ -18,6 +18,16 @@ class ReptilExotico : public Reptil, public AnimalExotico {
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
 		string tipo_veneno, string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~ReptilExotico ( void );
+
+        // Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setPais_origem (string newPais_origem);
+		string getPais_origem (void);
+
+		void setCidade_origem (string newCidade_origem);
+		string getCidade_origem (void);
 };
 
 #endif

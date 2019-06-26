@@ -18,6 +18,13 @@ class AveNativo : public Ave, public AnimalNativo {
 		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
 		double envergadura_das_asas, string autorizacao_ibama, string uf_origem);
         ~AveNativo ( void );
+
+        // Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setUF_origem (string newUForigem);
+		string getUF_origem ( void );
 }; /*AveNativo*/
 
 

@@ -11,14 +11,18 @@ class AnimalNativo : public AnimalSilvestre {
 	protected:
 		string m_uf_origem;
 		
-		// Getters and Setters
-		void setUF_origem (string newUForigem);
-		string getUF_origem ( void );
-		
 	public:
 		AnimalNativo ( void );
 		AnimalNativo (string autorizacao_ibama, string uf_origem);
-		~AnimalNativo ( void );
+		virtual ~AnimalNativo ( void );
+
+
+		// Getters and Setters
+		virtual void setAutorizacao_ibama (string newAutorizacao_ibama) = 0;
+		virtual string getAutorizacao_ibama ( void ) = 0;
+
+		virtual void setUF_origem (string newUForigem) = 0;
+		virtual string getUF_origem ( void ) = 0;
 };/* AnimalNativo */
 
 #endif

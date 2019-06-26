@@ -18,6 +18,13 @@ class AnfibioNativo : public Anfibio, public AnimalNativo {
 		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
 		string autorizacao_ibama, string uf_origem);
         ~AnfibioNativo ( void );
+
+		// Getters and Setters
+		void setAutorizacao_ibama (string newAutorizacao_ibama);
+		string getAutorizacao_ibama ( void );
+
+		void setUF_origem (string newUForigem);
+		string getUF_origem ( void );
 };
 
 #endif
