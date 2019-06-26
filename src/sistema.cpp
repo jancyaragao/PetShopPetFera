@@ -30,19 +30,19 @@ void Sistema::salvarArquivoFuncionarios(void){
 	cout << "Dados de funcionarios salvo!!!\n";
 }
 
-bool Sistema::verificaIdAnimal(int id) {
-	map<int, Animal*>::iterator it;
-	it = animais.find(id);
-	if (it != animais.end()) {
+bool Sistema::verificaIdFuncionario(int id) {
+	map<int, Funcionario*>::iterator it;
+	it = funcionarios.find(id);
+	if (it != funcionarios.end()) {
 		return true;
 	}
 	return false;
 }
 
-bool Sistema::verificaIdFuncionario(int id) {
-	map<int, Funcionario*>::iterator it;
-	it = funcionarios.find(id);
-	if (it != funcionarios.end()) {
+bool Sistema::verificaIdAnimal(int id) {
+	map<int, Animal*>::iterator it;
+	it = animais.find(id);
+	if (it != animais.end()) {
 		return true;
 	}
 	return false;
@@ -174,3 +174,23 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 		animais.insert ({id,novo});
 		return true;
 	} /*Anfibio Exotico*/
+
+bool Sistema::remover_funcionario(int id) {
+	map<int, Funcionario*>::iterator it;
+	it = funcionarios.find(id);
+	if (it != funcionarios.end()) {
+		funcionarios.erase(it);
+		return true;
+	}
+	return false;
+} /* Remover Funcionário */
+
+bool Sistema::remover_animal(int id) {
+	map<int, Animal*>::iterator it;
+	it = animais.find(id);
+	if (it != animais.end()) {
+		animais.erase(it);
+		return true;
+	}
+	return false;
+} /* Remover Animal */

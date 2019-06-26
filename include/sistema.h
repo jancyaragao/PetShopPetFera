@@ -45,10 +45,10 @@ class Sistema {
 		void salvarArquivoAnimais (void);
 		void salvarArquivoFuncionarios(void);
 
-		bool verificaIdAnimal(int id);
+		bool verificaIdFuncionario(int id);
 		/*Verifica id existe em Animal*/
 
-		bool verificaIdFuncionario(int id);
+		bool verificaIdAnimal(int id);
 		/*Verifica id existe em Animal*/
 
 		bool cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
@@ -115,6 +115,12 @@ class Sistema {
 				string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
 				string autorizacao_ibama, string pais_origem, string cidade_origem);
 				/*Cadastrar Anfibio Exotico*/
+
+		bool remover_funcionario(int id);
+		/* Remover de Funcionário */
+		
+		bool remover_animal(int id);
+		/* Remover de Animal */
 
 		// STUB ===>
 		// remocao_animal ();

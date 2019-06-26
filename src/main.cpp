@@ -27,5 +27,11 @@ int main (void) {
 	A.salvarArquivoAnimais();
 	A.salvarArquivoFuncionarios();
 
+	A.remover_animal(1);
+	A.remover_funcionario(1);
+
+	A.salvarArquivoAnimais();
+	A.salvarArquivoFuncionarios();
+
 	return 0;
 }/* main */
