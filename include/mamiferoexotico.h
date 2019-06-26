@@ -1,15 +1,24 @@
 #ifndef _MAMIFERO_EXOTICO_H_
 #define _MAMIFERO_EXOTICO_H_
 
+#include <iostream>
+
 #include "./mamifero.h"
 #include "./animalexotico.h"
 
 class MamiferoExotico : public Mamifero, public AnimalExotico {
+	private:
+		ostream& listarAnimal(ostream& os) const {
+            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            m_nome_batismo << ";" << m_cor_pelo << ";" << m_autorizacao_ibama << ";" <<
+            m_pais_origem << ";" << m_cidade_origem << ";" <<  endl;
+        }
     public:
         MamiferoExotico ( void );
-        MamiferoExotico (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-		QString dieta, int veterinario, int tratador, QString m_nome_batismo, QString m_cor_pelo,
-		QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
+        MamiferoExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,
+		string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~MamiferoExotico ( void );
 };
 

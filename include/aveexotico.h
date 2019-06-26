@@ -6,11 +6,18 @@
 
 // Herda Atributos da Classe Ave e AnimalExotico
 class AveExotico : public Ave, public AnimalExotico {
+	private:
+		ostream& listarAnimal(ostream& os) const {
+            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            m_nome_batismo << ";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" <<
+            m_autorizacao_ibama << ";" << m_pais_origem << ";" << m_cidade_origem << ";" << endl;
+        }
     public:
         AveExotico ( void );
-        AveExotico (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-		QString dieta, int veterinario, int tratador, QString m_nome_batismo, double tamanho_do_bico_cm,
-		double envergadura_das_asas, QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
+        AveExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
+		double envergadura_das_asas, string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~AveExotico ( void );
 };/* AveExotico */
 

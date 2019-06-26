@@ -5,11 +5,18 @@
 #include "animalexotico.h"
 
 class ReptilExotico : public Reptil, public AnimalExotico {
+	private:
+		ostream& listarAnimal(ostream& os) const {
+            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            m_nome_batismo << ";" << m_venenoso << ";" << m_tipo_veneno << ";" <<
+            m_autorizacao_ibama << ";" << m_pais_origem << ";" << m_cidade_origem << ";" << endl;
+        }
     public:
         ReptilExotico ( void );
-        ReptilExotico (int id, QString classe, QString m_nome_cientifico, char sexo, double tamanho,
-		QString dieta, int veterinario, int tratador, QString m_nome_batismo, bool m_venenoso,
-		QString tipo_veneno, QString autorizacao_ibama, QString pais_origem, QString cidade_origem);
+        ReptilExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
+		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,
+		string tipo_veneno, string autorizacao_ibama, string pais_origem, string cidade_origem);
         ~ReptilExotico ( void );
 };
 
