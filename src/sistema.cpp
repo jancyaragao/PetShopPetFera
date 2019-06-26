@@ -4,6 +4,12 @@
 
 using namespace std;
 
+void Sistema::salvarArquivoAnimais(void){
+	// for (auto it : animais){
+	// 	cout << it[1].getNome_cientifico() << endl;
+	// }
+}
+
 bool Sistema::verificaIdAnimal(int id) {
 	map<int, Animal*>::iterator it;
 	it = animais.find(id);

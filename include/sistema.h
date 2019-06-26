@@ -2,6 +2,7 @@
 #define _SISTEMA_H_
 
 #include <string>
+#include <fstream>
 #include <map>
 
 #include "./funcionario.h"
@@ -38,6 +39,8 @@ class Sistema {
 		map <int, Funcionario*> funcionarios;
 
 	public:
+
+		void salvarArquivoAnimais (void);
 
 		bool verificaIdAnimal(int id);
 		/*Verifica id existe em Animal*/
