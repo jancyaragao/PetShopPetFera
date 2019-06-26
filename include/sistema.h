@@ -194,10 +194,8 @@ class Sistema {
 			string tipo_veneno, string autorizacao_ibama, string pais_origem, string cidade_origem);
 			/* Editar Reptil Exotico*/
 
-		// STUB ===>
-		// consultar_animal ();
-		// consultar_animal_por_func ();
-		// STUB <===
+		void consultarAnimal(int id);
+		void consultarFuncionario(int id);
 };
 
 

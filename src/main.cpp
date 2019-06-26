@@ -37,10 +37,13 @@ int main (void) {
 	A.salvarArquivoAnimais();
 	A.salvarArquivoFuncionarios();
 
-	// A.editar_funcionario(2, "jose", "123123123", 12, "A+", "especial", 9000);
+	A.editar_funcionario(2, "jose", "123123123", 12, "A+", "especial", "9000");
 
 	A.listarAnimais();
 	A.listarFuncionarios();
+
+	A.consultarAnimal(5);
+	A.consultarFuncionario(2);
 
 	return 0;
 }/* main */

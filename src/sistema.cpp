@@ -616,3 +616,22 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 		}
 		return false;
 	} /*Reptil Exotico*/
+
+	void Sistema::consultarAnimal (int id){
+		map<int, Animal*>::iterator it;
+		it = animais.find(id);
+		if (it != animais.end()){
+			cout << *it->second;
+		} else {
+			cout << "Animal não encontrado!";
+		}
+	}
+	void Sistema::consultarFuncionario (int id){
+		map<int, Funcionario*>::iterator it;
+		it = funcionarios.find(id);
+		if (it != funcionarios.end()){
+			cout << *it->second;
+		} else {
+			cout << "Funcionário não encontrado!";
+		}
+	}
