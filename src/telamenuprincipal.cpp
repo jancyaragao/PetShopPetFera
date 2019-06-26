@@ -37,3 +37,17 @@ void TelaMenuPrincipal::on_btn_criar_usuario_clicked()
 void TelaMenuPrincipal::on_btn_logoff_2_clicked()
 {
 }
+
+void TelaMenuPrincipal::on_pushButton_clicked()
+{
+    TelaCrudPointer = new CrudTela(this);
+    TelaCrudPointer->show();
+}
+
+void TelaMenuPrincipal::on_btn_criar_animal_clicked()
+{
+    TelaCadastroAnimalPointer = new cadastro_animal(this);
+    TelaCadastroAnimalPointer->show();
+}
+
+

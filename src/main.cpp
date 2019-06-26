@@ -1,11 +1,11 @@
-#include "telalogin.h"
+#include "sistema.h"
 #include "dados_usuario.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    telaLogin w;
+    sistema w;
     w.show();
 
     return a.exec();

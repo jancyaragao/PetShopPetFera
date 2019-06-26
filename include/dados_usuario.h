@@ -6,7 +6,6 @@
 class dados_usuario
 {
     private:
-        int id;
         QString nome;
         QString usuario;
         QString funcao;
@@ -18,9 +17,8 @@ class dados_usuario
         int nivel_de_seguranca;
 
     public:
-        dados_usuario(int id_, QString nome_,QString usuario_, QString funcao_, QString senha_, QString foto3x4_, QString cpf_,QString especialidade_, short int idade_);
+        dados_usuario(QString nome_,QString usuario_, QString funcao_, QString senha_, QString foto3x4_, QString cpf_,QString especialidade_, short int idade_);
         ~dados_usuario();
-        int get_Id();
         QString get_nome_oficial_usuario();
         QString get_usuario();
         QString get_funcao_usuario();

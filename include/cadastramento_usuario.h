@@ -21,6 +21,10 @@ private slots:
 
     void on_buttonBox_accepted();
 
+    void on_combo_box_funcoes_currentTextChanged(const QString &arg1);
+
+    void on_m_id_editingFinished();
+
 private:
     Ui::cadastramento_usuario *ui;
 };
