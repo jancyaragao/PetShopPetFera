@@ -30,6 +30,8 @@ int main (void) {
 	A.remover_animal(1);
 	A.remover_funcionario(1);
 
+	A.editar_funcionario(2, "jose", "123123123", 12, "A+", "especial", 9000);
+
 	A.salvarArquivoAnimais();
 	A.salvarArquivoFuncionarios();
 
