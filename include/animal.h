@@ -10,7 +10,7 @@ using namespace std;
 class Animal {
 	private:
 		virtual ostream& listarAnimal (ostream&) const = 0;
-		// virtual ofstream& salvarAnimal (ofstream&) const = 0;
+		virtual ofstream& salvarAnimal (ofstream&) const = 0;
 	protected:
 		int m_id;
 		string m_classe;
@@ -57,10 +57,9 @@ class Animal {
 		friend ostream& operator << (ostream& o, const Animal& A){
 			return A.listarAnimal(o);
 		}
-
-		// friend ofstream& operator << (ofstream& o, const Animal& A){
-		// 	return A.salvarAnimal(o);
-		// }
+		friend ofstream& operator << (ofstream& o, const Animal& A){
+			return A.salvarAnimal(o);
+		}
 
 		virtual void imprime() = 0;
 

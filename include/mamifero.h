@@ -10,15 +10,30 @@ class Mamifero: public Animal {
 		string m_cor_pelo;
 
 		ostream& listarAnimal(ostream& os) const {
-            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
-            m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
-            m_nome_batismo << ";" << m_cor_pelo << ";" << endl;
+            // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            // m_nome_batismo << ";" << m_cor_pelo << ";" << endl;
+
+            os << 
+            "\nID: " << m_id << 
+			"\nClasse: " << m_classe << 
+			"\nNome Cientifico: " << m_nome_cientifico << 
+			"\nSexo: " << m_sexo << 
+			"\nTamanho: " << m_tamanho <<
+			"\nDieta: " << m_dieta <<
+			"\nVeterinario: " << m_veterinario <<
+			"\nTratador: " << m_tratador <<
+			"\nNome Batismo: " <<  m_nome_batismo <<
+			"\nCor do pelo: " << m_cor_pelo <<
+			"\n" << endl;
+			return os;
         }
-        // ofstream& salvarAnimal(ofstream& os) const {
-        //     return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
-        //     m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
-        //     m_nome_batismo << ";" << m_cor_pelo << ";" << endl
-        // }
+        ofstream& salvarAnimal(ofstream& out) const{
+			out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
+			<< ";" << m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador 
+			<< ";" << m_nome_batismo << ";" << m_cor_pelo << endl;
+			return out;
+		}
 
 	public:
 		Mamifero();

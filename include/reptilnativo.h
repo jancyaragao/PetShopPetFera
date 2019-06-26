@@ -6,11 +6,32 @@
 
 class ReptilNativo : public Reptil, public AnimalNativo {
 	private:
-		ostream& listarAnimal(ostream& os) const {
-            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+        ostream& listarAnimal(ostream& os) const {
+            // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            // m_nome_batismo << ";" << m_venenoso << ";" << m_tipo_veneno << ";" << endl;
+
+            os << 
+            "\nID: " << m_id << 
+            "\nClasse: " << m_classe << 
+            "\nNome Cientifico: " << m_nome_cientifico << 
+            "\nSexo: " << m_sexo << 
+            "\nTamanho: " << m_tamanho <<
+            "\nDieta: " << m_dieta <<
+            "\nVeterinario: " << m_veterinario <<
+            "\nTratador: " << m_tratador <<
+            "\nNome Batismo: " <<  m_nome_batismo <<
+            "\nVenenoso: " << m_venenoso <<
+            "\nTipo Veneno: " << m_tipo_veneno <<
+            "\n" << endl;
+            return os;
+        }
+		ofstream& listarAnimal(ofstream& out) const {
+            out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
             m_nome_batismo << ";" << m_venenoso << ";" << m_tipo_veneno << ";" <<
             m_autorizacao_ibama << ";" << m_uf_origem << ";" << endl;
+            return out;
         }
     public:
         ReptilNativo ( void );

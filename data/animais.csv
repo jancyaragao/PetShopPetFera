@@ -1,10 +1,6 @@
-1;classe 1;nome_cientifico;M;1.4;comida;0;1;seu_joao;cinza;
-
-2;classe 2;nome_cientifico;M;1.4;comida;0;1;seu_joao;1;veneno;
-
-3;classe 3;m_nome_cientifico;F;1.4;dieta;1;0;m_nome_batismo;1;autorizacao;pais_origem;cidade_origem;
-
-4;classe 4;m_nome_cientifico;F;1.4;dieta;1;0;m_nome_batismo;1;autorizacao;pais_origem;cidade_origem;
-
-5;classe 5;nome_cientifico;M;1.4;comida;0;1;seu_joao;1;veneno;
-
+2;classe 2;nome_cientifico;M;1.4;comida;0;1;seu_joao;1;veneno
+3;classe 3;m_nome_cientifico;F;1.4;dieta;1;0;m_nome_batismo;1;autorizacao
+4;classe 4;m_nome_cientifico;F;1.4;dieta;1;0;m_nome_batismo;1;autorizacao
+5;classe 5;nome_cientifico;M;1.4;comida;0;1;seu_joao;1;veneno
+6;classe 6;noeno;M;1.6;dieta;1;0;asf;0;de rato;string;pais;origem;
+7;classe 7;Nome;M;0.3;dietaaaaa;0;1;aaa;3

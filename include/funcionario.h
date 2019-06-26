@@ -10,6 +10,7 @@ using namespace std;
 class Funcionario {
 	private:
 		virtual ostream& listarFuncionario (ostream&) const = 0;
+		virtual ofstream& salvarFuncionario (ofstream&) const = 0;
 	protected:
 		int m_id;
 		string m_nome;
@@ -41,13 +42,13 @@ class Funcionario {
 		virtual void setEspecialidade(string new_especialidade) = 0;
 		virtual string getEspecialidade() = 0;
 
-		friend ostream& operator << (ostream& o, const Funcionario& A){
-			return A.listarFuncionario(o);
+		friend ostream& operator << (ostream& os, const Funcionario& F){
+			return F.listarFuncionario(os);
 		}
 
-		// friend ofstream& operator << (ofstream& o, const Funcionario& A){
-		// 	return A.salvarFuncionario(o);
-		// }
+		friend ofstream& operator << (ofstream& out, const Funcionario& F){
+			return F.salvarFuncionario(out);
+		}
 
 		virtual void imprime()=0;
 

@@ -4,6 +4,8 @@
 #include <string>
 #include <fstream>
 #include <map>
+#include <exception>
+#include <stdexcept>
 
 #include "./funcionario.h"
 #include "./tratador.h"
@@ -43,7 +45,9 @@ class Sistema {
 		void initScript (void);
 
 		void salvarArquivoAnimais (void);
+		void listarAnimais(void);
 		void salvarArquivoFuncionarios(void);
+		void listarFuncionarios(void);
 
 		bool verificaIdFuncionario(int id);
 		/*Verifica id existe em Animal*/

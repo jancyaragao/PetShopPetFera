@@ -6,11 +6,34 @@
 
 class AveNativo : public Ave, public AnimalNativo {
 	private:
-		ostream& listarAnimal(ostream& os) const {
-            return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+        ostream& listarAnimal(ostream& os) const {
+            // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
+            // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
+            // m_nome_batismo << ";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" << endl;
+
+            os << 
+            "\nID: " << m_id << 
+            "\nClasse: " << m_classe << 
+            "\nNome Cientifico: " << m_nome_cientifico << 
+            "\nSexo: " << m_sexo << 
+            "\nTamanho: " << m_tamanho <<
+            "\nDieta: " << m_dieta <<
+            "\nVeterinario: " << m_veterinario <<
+            "\nTratador: " << m_tratador <<
+            "\nNome Batismo: " <<  m_nome_batismo <<
+            "\nTamanho do Bico: " << m_tamanho_do_bico_cm <<
+            "\nEnvergadura das asas: " << m_envergadura_das_asas <<
+            "\nAutorização: " << m_autorizacao_ibama <<
+            "\nUF: " << m_uf_origem <<
+            "\n" << endl;
+            return os;
+        }
+		ofstream& salvarAnimal(ofstream& out) const {
+            out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
             m_nome_batismo << ";" << m_tamanho_do_bico_cm << ";" << m_envergadura_das_asas << ";" <<
             m_autorizacao_ibama << ";" << m_uf_origem << ";" << endl;
+            return out;
         }
     public:
         AveNativo ( void );

@@ -58,6 +58,6 @@ string Tratador::getEspecialidade() {
 
 
 void Tratador::imprime(void){
-	cout << m_id << m_nome << m_cpf << m_idade << 
-            m_tipo_sanguineo << m_especialidade << m_nivel_de_seguranca << endl;
+	cout << m_id << m_nome << m_cpf << m_idade <<  m_tipo_sanguineo << m_especialidade <<
+	m_nivel_de_seguranca << endl;
 }

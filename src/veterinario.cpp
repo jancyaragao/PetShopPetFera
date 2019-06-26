@@ -58,6 +58,5 @@ string Veterinario::getEspecialidade() {
 }
 
 void Veterinario::imprime(void){
-	cout << m_id << m_nome << m_cpf << m_idade << 
-            m_tipo_sanguineo << m_especialidade << m_crmv << endl;
+	cout << m_id << m_nome << m_cpf << m_idade <<  m_tipo_sanguineo << m_especialidade << m_crmv << endl;
 }

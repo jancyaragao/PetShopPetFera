@@ -12,8 +12,21 @@ class Veterinario: public Funcionario {
 		string m_crmv;
 		
 		ostream& listarFuncionario(ostream& os) const {
-            return os << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" <<
+			os <<
+			"\nID: " << m_id <<
+			"\nNome: " << m_nome <<
+			"\nCPF: " << m_cpf <<
+			"\nIdade: " << m_idade <<
+			"\nTipo Sanguineo: " << m_tipo_sanguineo <<
+			"\nEspecialidade: " << m_especialidade <<
+			"\nCRMV: " << m_crmv << 
+			"\n" << endl;
+			return os;
+		}
+		ofstream& salvarFuncionario(ofstream& out) const {
+            out << m_id << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" <<
             m_tipo_sanguineo << ";" << m_especialidade << ";" << m_crmv << ";" << endl;
+            return out;
         }
 	public:
 		Veterinario();
