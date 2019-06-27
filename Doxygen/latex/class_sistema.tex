@@ -1,0 +1,305 @@
+\hypertarget{class_sistema}{}\section{Sistema Class Reference}
+\label{class_sistema}\index{Sistema@{Sistema}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sistema_a637f67c9c3d34e2686f09b1644bd6709}\label{class_sistema_a637f67c9c3d34e2686f09b1644bd6709}} 
+void \mbox{\hyperlink{class_sistema_a637f67c9c3d34e2686f09b1644bd6709}{init\+Script}} (void)
+\begin{DoxyCompactList}\small\item\em contém todos os métodos da classe sistema \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a959b36315fae7423cadd7c1a110efe9f}\label{class_sistema_a959b36315fae7423cadd7c1a110efe9f}} 
+void \mbox{\hyperlink{class_sistema_a959b36315fae7423cadd7c1a110efe9f}{salvar\+Arquivo\+Animais}} (void)
+\begin{DoxyCompactList}\small\item\em Salvar dados dos animais no arquivo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sistema_a1296c9bb67a554963f550b5a4d1dec40}{listar\+Animais}} (void)
+\begin{DoxyCompactList}\small\item\em listando os animais \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a4f3b270ace3e06dc319b23ef01961cb1}\label{class_sistema_a4f3b270ace3e06dc319b23ef01961cb1}} 
+void \mbox{\hyperlink{class_sistema_a4f3b270ace3e06dc319b23ef01961cb1}{salvar\+Arquivo\+Funcionarios}} (void)
+\begin{DoxyCompactList}\small\item\em Salvar dados dos Funcionarios no arquivo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a2ef640ae75525dc0ac48878a66e1822d}\label{class_sistema_a2ef640ae75525dc0ac48878a66e1822d}} 
+void \mbox{\hyperlink{class_sistema_a2ef640ae75525dc0ac48878a66e1822d}{listar\+Funcionarios}} (void)
+\begin{DoxyCompactList}\small\item\em listando os Funcionários através de um iterator \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a44074e27354dd4a14df69c9cbef9e1bf}\label{class_sistema_a44074e27354dd4a14df69c9cbef9e1bf}} 
+bool \mbox{\hyperlink{class_sistema_a44074e27354dd4a14df69c9cbef9e1bf}{verifica\+Id\+Funcionario}} (int id)
+\begin{DoxyCompactList}\small\item\em Verificador de id de um funcionários para evitar ambiguidade de id(chave) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a8029cb8e3c198b07caa80ecc6293d5b0}\label{class_sistema_a8029cb8e3c198b07caa80ecc6293d5b0}} 
+bool \mbox{\hyperlink{class_sistema_a8029cb8e3c198b07caa80ecc6293d5b0}{verifica\+Id\+Animal}} (int id)
+\begin{DoxyCompactList}\small\item\em Verificador de id de um animal para evitar ambiguidade de id(chave) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_aabbe1927854b5a8b17a98b6cabdb7ff3}{cadastrar\+\_\+funcionario}} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, string especialidade, int nivel\+\_\+de\+\_\+seguranca)
+\begin{DoxyCompactList}\small\item\em cadastro de um funcionário -\/ T\+R\+A\+T\+A\+D\+OR,e com metodo sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a1cb053a5708ed71b300417b00d4fa849}{cadastrar\+\_\+funcionario}} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, string especialidade, string crmv)
+\begin{DoxyCompactList}\small\item\em cadastro de um funcionário -\/ V\+E\+T\+E\+R\+I\+NÁ\+R\+IO, e com metodo sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a5435a4ad49076bda8dd91387093b9268}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}}, utilizando tratamento de exceção e com metodo sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a3c9d2decd44859a8f8eab34859539718}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/\mbox{\hyperlink{class_anfibio}{Anfibio}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_abb027a54e2c84f92c6416f379654632a}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Exótico, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_abe8cab13768dcc8cf90c9a0fe9663af0}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}}, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_aaa33ed8820b6a9f9c14f3f4f5ab2df4e}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Nativa, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_af360ec77152a6b60c5cfe4a4a31deeb6}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Exótica, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a5b55e20b1440ad96bf7182a679d5f0fe}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}}, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a8a8ffc01c3b3a69f08cfb7224c2705c3}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/\mbox{\hyperlink{class_mamifero}{Mamifero}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a5bc6a9264b55170329115d8fa97a5d8f}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} Exotico, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_ac30d90899aab0832645814e96cb8de61}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}}, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_ac02c0c9e6e1a5546801822c3fb467c36}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a5aa4821903f16d5183e712d7e59c95de}{cadastrar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Exótico, utilizando tratamento de exceção e com método sobrecarregado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a890a6f3c58e05fc38d372b270b2a3180}{remover\+\_\+funcionario}} (int id)
+\begin{DoxyCompactList}\small\item\em Remove um funcionário. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a05daf6b3c0d5c65627965eb9b331deac}{remover\+\_\+animal}} (int id)
+\begin{DoxyCompactList}\small\item\em Remove um animal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a9d29640453a32705230b5e9b6db0cf9b}\label{class_sistema_a9d29640453a32705230b5e9b6db0cf9b}} 
+bool \mbox{\hyperlink{class_sistema_a9d29640453a32705230b5e9b6db0cf9b}{editar\+\_\+funcionario}} (int id)
+\begin{DoxyCompactList}\small\item\em Edita funcionário com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_a820add3f6f6710ff817922b96b591765}{editar\+\_\+funcionario}} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, string especialidade, int nivel\+\_\+de\+\_\+seguranca)
+\begin{DoxyCompactList}\small\item\em Edita funcionário com iterator e metódo sobrecarregado, \mbox{\hyperlink{class_tratador}{Tratador}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sistema_acbbe56ff28b53805edb16ec4a7cf0dd0}{editar\+\_\+funcionario}} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, string especialidade, string crmv)
+\begin{DoxyCompactList}\small\item\em Edita funcionário com iterator e metódo sobrecarregado, \mbox{\hyperlink{class_veterinario}{Veterinario}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_af3fddb7e612087f5f32d96da0ddef16b}\label{class_sistema_af3fddb7e612087f5f32d96da0ddef16b}} 
+bool \mbox{\hyperlink{class_sistema_af3fddb7e612087f5f32d96da0ddef16b}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_ada7f73da98649c1ea42a7ce58609d2e7}\label{class_sistema_ada7f73da98649c1ea42a7ce58609d2e7}} 
+bool \mbox{\hyperlink{class_sistema_ada7f73da98649c1ea42a7ce58609d2e7}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Nativo com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a76c734aab144f2592674d3c1785e4a37}\label{class_sistema_a76c734aab144f2592674d3c1785e4a37}} 
+bool \mbox{\hyperlink{class_sistema_a76c734aab144f2592674d3c1785e4a37}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int id\+\_\+veterinario, int id\+\_\+tratador, string nome\+\_\+batismo, int total\+\_\+de\+\_\+mudas, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Exótico com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a0e3132f3ebbd57c75326d3ec643f023d}\label{class_sistema_a0e3132f3ebbd57c75326d3ec643f023d}} 
+bool \mbox{\hyperlink{class_sistema_a0e3132f3ebbd57c75326d3ec643f023d}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_ave}{Ave}} com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_ade0cf5fc24e2e2d2fca0ef0b2f93e98d}\label{class_sistema_ade0cf5fc24e2e2d2fca0ef0b2f93e98d}} 
+bool \mbox{\hyperlink{class_sistema_ade0cf5fc24e2e2d2fca0ef0b2f93e98d}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_ave}{Ave}} Nativa com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a57325ee49fb526d28f3fe1609e6d75b0}\label{class_sistema_a57325ee49fb526d28f3fe1609e6d75b0}} 
+bool \mbox{\hyperlink{class_sistema_a57325ee49fb526d28f3fe1609e6d75b0}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, double tamanho\+\_\+do\+\_\+bico\+\_\+cm, double envergadura\+\_\+das\+\_\+asas, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_ave}{Ave}} Exótica com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a44e361f5b7df5e0f795886a68a6621d6}\label{class_sistema_a44e361f5b7df5e0f795886a68a6621d6}} 
+bool \mbox{\hyperlink{class_sistema_a44e361f5b7df5e0f795886a68a6621d6}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a07a6f7a3389aa4ccba8bc55a4f3307d4}\label{class_sistema_a07a6f7a3389aa4ccba8bc55a4f3307d4}} 
+bool \mbox{\hyperlink{class_sistema_a07a6f7a3389aa4ccba8bc55a4f3307d4}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} Nativo com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a0ce3cca9d8d81d4a761237c269f98209}\label{class_sistema_a0ce3cca9d8d81d4a761237c269f98209}} 
+bool \mbox{\hyperlink{class_sistema_a0ce3cca9d8d81d4a761237c269f98209}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, string cor\+\_\+pelo, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} Exótico com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a90baa50637c286863a2035817f0f9bce}\label{class_sistema_a90baa50637c286863a2035817f0f9bce}} 
+bool \mbox{\hyperlink{class_sistema_a90baa50637c286863a2035817f0f9bce}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ Réptil com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_aa746b33d6287272f40f49b0bec215c03}\label{class_sistema_aa746b33d6287272f40f49b0bec215c03}} 
+bool \mbox{\hyperlink{class_sistema_aa746b33d6287272f40f49b0bec215c03}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno, string autorizacao\+\_\+ibama, string uf\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ Nativo com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a62bed38c08140063ae833bffa9f7d422}\label{class_sistema_a62bed38c08140063ae833bffa9f7d422}} 
+bool \mbox{\hyperlink{class_sistema_a62bed38c08140063ae833bffa9f7d422}{editar\+\_\+animal}} (int id, string classe, string nome\+\_\+cientifico, char sexo, double tamanho, string dieta, int veterinario, int tratador, string nome\+\_\+batismo, bool venenoso, string tipo\+\_\+veneno, string autorizacao\+\_\+ibama, string pais\+\_\+origem, string cidade\+\_\+origem)
+\begin{DoxyCompactList}\small\item\em Edita animal -\/ Réptil Exótico com iterator e metódo sobrecarregado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a30ae8c31aee6eaa58a8114c92ec56f9d}\label{class_sistema_a30ae8c31aee6eaa58a8114c92ec56f9d}} 
+void \mbox{\hyperlink{class_sistema_a30ae8c31aee6eaa58a8114c92ec56f9d}{consultar\+Animal}} (int id)
+\begin{DoxyCompactList}\small\item\em Consultar \mbox{\hyperlink{class_animal}{Animal}} -\/ utilizando iterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sistema_a76a0194e816767c0ace739eca298b03b}\label{class_sistema_a76a0194e816767c0ace739eca298b03b}} 
+void \mbox{\hyperlink{class_sistema_a76a0194e816767c0ace739eca298b03b}{consultar\+Funcionario}} (int id)
+\begin{DoxyCompactList}\small\item\em Consultar funcionário -\/ utilizando iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sistema_a5435a4ad49076bda8dd91387093b9268}\label{class_sistema_a5435a4ad49076bda8dd91387093b9268}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{id\+\_\+veterinario,  }\item[{int}]{id\+\_\+tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{int}]{total\+\_\+de\+\_\+mudas }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}}, utilizando tratamento de exceção e com metodo sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}}, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_a3c9d2decd44859a8f8eab34859539718}\label{class_sistema_a3c9d2decd44859a8f8eab34859539718}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{id\+\_\+veterinario,  }\item[{int}]{id\+\_\+tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{int}]{total\+\_\+de\+\_\+mudas,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{uf\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/\mbox{\hyperlink{class_anfibio}{Anfibio}} Nativo, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_abb027a54e2c84f92c6416f379654632a}\label{class_sistema_abb027a54e2c84f92c6416f379654632a}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{id\+\_\+veterinario,  }\item[{int}]{id\+\_\+tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{int}]{total\+\_\+de\+\_\+mudas,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{pais\+\_\+origem,  }\item[{string}]{cidade\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Exótico, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Exótico, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_abe8cab13768dcc8cf90c9a0fe9663af0}\label{class_sistema_abe8cab13768dcc8cf90c9a0fe9663af0}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [4/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{double}]{tamanho\+\_\+do\+\_\+bico\+\_\+cm,  }\item[{double}]{envergadura\+\_\+das\+\_\+asas }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}}, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}}, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_aaa33ed8820b6a9f9c14f3f4f5ab2df4e}\label{class_sistema_aaa33ed8820b6a9f9c14f3f4f5ab2df4e}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [5/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{double}]{tamanho\+\_\+do\+\_\+bico\+\_\+cm,  }\item[{double}]{envergadura\+\_\+das\+\_\+asas,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{uf\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Nativa, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/\mbox{\hyperlink{class_mamifero}{Mamifero}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_af360ec77152a6b60c5cfe4a4a31deeb6}\label{class_sistema_af360ec77152a6b60c5cfe4a4a31deeb6}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [6/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{double}]{tamanho\+\_\+do\+\_\+bico\+\_\+cm,  }\item[{double}]{envergadura\+\_\+das\+\_\+asas,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{pais\+\_\+origem,  }\item[{string}]{cidade\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Exótica, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} Exotico, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_a5b55e20b1440ad96bf7182a679d5f0fe}\label{class_sistema_a5b55e20b1440ad96bf7182a679d5f0fe}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [7/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{string}]{cor\+\_\+pelo }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}}, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}}, utilizando tratamento de exceção e com metodo sobrecarregado \mbox{\Hypertarget{class_sistema_a8a8ffc01c3b3a69f08cfb7224c2705c3}\label{class_sistema_a8a8ffc01c3b3a69f08cfb7224c2705c3}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [8/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{string}]{cor\+\_\+pelo,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{uf\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/\mbox{\hyperlink{class_mamifero}{Mamifero}} Nativo, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Nativo, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_a5bc6a9264b55170329115d8fa97a5d8f}\label{class_sistema_a5bc6a9264b55170329115d8fa97a5d8f}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [9/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{string}]{cor\+\_\+pelo,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{pais\+\_\+origem,  }\item[{string}]{cidade\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_mamifero}{Mamifero}} Exotico, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_anfibio}{Anfibio}} Exótico, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_ac30d90899aab0832645814e96cb8de61}\label{class_sistema_ac30d90899aab0832645814e96cb8de61}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [10/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{bool}]{venenoso,  }\item[{string}]{tipo\+\_\+veneno }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}}, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}}, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_ac02c0c9e6e1a5546801822c3fb467c36}\label{class_sistema_ac02c0c9e6e1a5546801822c3fb467c36}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [11/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{bool}]{venenoso,  }\item[{string}]{tipo\+\_\+veneno,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{uf\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Nativo, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Nativa, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_a5aa4821903f16d5183e712d7e59c95de}\label{class_sistema_a5aa4821903f16d5183e712d7e59c95de}} 
+\index{Sistema@{Sistema}!cadastrar\_animal@{cadastrar\_animal}}
+\index{cadastrar\_animal@{cadastrar\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_animal()}{cadastrar\_animal()}\hspace{0.1cm}{\footnotesize\ttfamily [12/12]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{classe,  }\item[{string}]{nome\+\_\+cientifico,  }\item[{char}]{sexo,  }\item[{double}]{tamanho,  }\item[{string}]{dieta,  }\item[{int}]{veterinario,  }\item[{int}]{tratador,  }\item[{string}]{nome\+\_\+batismo,  }\item[{bool}]{venenoso,  }\item[{string}]{tipo\+\_\+veneno,  }\item[{string}]{autorizacao\+\_\+ibama,  }\item[{string}]{pais\+\_\+origem,  }\item[{string}]{cidade\+\_\+origem }\end{DoxyParamCaption})}
+
+
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_reptil}{Reptil}} Exótico, utilizando tratamento de exceção e com método sobrecarregado 
+
+cadastro de um \mbox{\hyperlink{class_animal}{Animal}} -\/ \mbox{\hyperlink{class_ave}{Ave}} Exótica, utilizando tratamento de exceção e com método sobrecarregado \mbox{\Hypertarget{class_sistema_aabbe1927854b5a8b17a98b6cabdb7ff3}\label{class_sistema_aabbe1927854b5a8b17a98b6cabdb7ff3}} 
+\index{Sistema@{Sistema}!cadastrar\_funcionario@{cadastrar\_funcionario}}
+\index{cadastrar\_funcionario@{cadastrar\_funcionario}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_funcionario()}{cadastrar\_funcionario()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+funcionario (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{nome,  }\item[{string}]{cpf,  }\item[{short}]{idade,  }\item[{string}]{tipo\+\_\+sanguineo,  }\item[{string}]{especialidade,  }\item[{int}]{nivel\+\_\+de\+\_\+seguranca }\end{DoxyParamCaption})}
+
+
+
+cadastro de um funcionário -\/ T\+R\+A\+T\+A\+D\+OR,e com metodo sobrecarregado 
+
+cadastro de um funcionário -\/ T\+R\+A\+T\+A\+D\+OR,utilizando tratamento de exceção e e com metodo sobrecarregado \mbox{\Hypertarget{class_sistema_a1cb053a5708ed71b300417b00d4fa849}\label{class_sistema_a1cb053a5708ed71b300417b00d4fa849}} 
+\index{Sistema@{Sistema}!cadastrar\_funcionario@{cadastrar\_funcionario}}
+\index{cadastrar\_funcionario@{cadastrar\_funcionario}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{cadastrar\_funcionario()}{cadastrar\_funcionario()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Sistema\+::cadastrar\+\_\+funcionario (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{nome,  }\item[{string}]{cpf,  }\item[{short}]{idade,  }\item[{string}]{tipo\+\_\+sanguineo,  }\item[{string}]{especialidade,  }\item[{string}]{crmv }\end{DoxyParamCaption})}
+
+
+
+cadastro de um funcionário -\/ V\+E\+T\+E\+R\+I\+NÁ\+R\+IO, e com metodo sobrecarregado 
+
+cadastro de um funcionário -\/ V\+E\+T\+E\+R\+I\+NÁ\+R\+IO, utilizando tratamento de exceção e com metodo sobrecarregado \mbox{\Hypertarget{class_sistema_a820add3f6f6710ff817922b96b591765}\label{class_sistema_a820add3f6f6710ff817922b96b591765}} 
+\index{Sistema@{Sistema}!editar\_funcionario@{editar\_funcionario}}
+\index{editar\_funcionario@{editar\_funcionario}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{editar\_funcionario()}{editar\_funcionario()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Sistema\+::editar\+\_\+funcionario (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{nome,  }\item[{string}]{cpf,  }\item[{short}]{idade,  }\item[{string}]{tipo\+\_\+sanguineo,  }\item[{string}]{especialidade,  }\item[{int}]{nivel\+\_\+de\+\_\+seguranca }\end{DoxyParamCaption})}
+
+
+
+Edita funcionário com iterator e metódo sobrecarregado, \mbox{\hyperlink{class_tratador}{Tratador}}. 
+
+Edita funcionário com iterator e metódo sobrecarregado. \mbox{\Hypertarget{class_sistema_acbbe56ff28b53805edb16ec4a7cf0dd0}\label{class_sistema_acbbe56ff28b53805edb16ec4a7cf0dd0}} 
+\index{Sistema@{Sistema}!editar\_funcionario@{editar\_funcionario}}
+\index{editar\_funcionario@{editar\_funcionario}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{editar\_funcionario()}{editar\_funcionario()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Sistema\+::editar\+\_\+funcionario (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{string}]{nome,  }\item[{string}]{cpf,  }\item[{short}]{idade,  }\item[{string}]{tipo\+\_\+sanguineo,  }\item[{string}]{especialidade,  }\item[{string}]{crmv }\end{DoxyParamCaption})}
+
+
+
+Edita funcionário com iterator e metódo sobrecarregado, \mbox{\hyperlink{class_veterinario}{Veterinario}}. 
+
+Edita funcionário com iterator e metódo sobrecarregado, removendo Veterinário. \mbox{\Hypertarget{class_sistema_a1296c9bb67a554963f550b5a4d1dec40}\label{class_sistema_a1296c9bb67a554963f550b5a4d1dec40}} 
+\index{Sistema@{Sistema}!listarAnimais@{listarAnimais}}
+\index{listarAnimais@{listarAnimais}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{listarAnimais()}{listarAnimais()}}
+{\footnotesize\ttfamily void Sistema\+::listar\+Animais (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+listando os animais 
+
+listando os animais através de um iterator \mbox{\Hypertarget{class_sistema_a05daf6b3c0d5c65627965eb9b331deac}\label{class_sistema_a05daf6b3c0d5c65627965eb9b331deac}} 
+\index{Sistema@{Sistema}!remover\_animal@{remover\_animal}}
+\index{remover\_animal@{remover\_animal}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{remover\_animal()}{remover\_animal()}}
+{\footnotesize\ttfamily bool Sistema\+::remover\+\_\+animal (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove um animal. 
+
+Remove um animal utilizando iterator. \mbox{\Hypertarget{class_sistema_a890a6f3c58e05fc38d372b270b2a3180}\label{class_sistema_a890a6f3c58e05fc38d372b270b2a3180}} 
+\index{Sistema@{Sistema}!remover\_funcionario@{remover\_funcionario}}
+\index{remover\_funcionario@{remover\_funcionario}!Sistema@{Sistema}}
+\subsubsection{\texorpdfstring{remover\_funcionario()}{remover\_funcionario()}}
+{\footnotesize\ttfamily bool Sistema\+::remover\+\_\+funcionario (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Remove um funcionário. 
+
+Remove um funcionário utilizando iterator. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pet\+Shop\+Pet\+Fera/include/\mbox{\hyperlink{sistema_8h}{sistema.\+h}}\item 
+Pet\+Shop\+Pet\+Fera/src/\mbox{\hyperlink{sistema_8cpp}{sistema.\+cpp}}\end{DoxyCompactItemize}
