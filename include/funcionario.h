@@ -6,7 +6,11 @@
 #include <fstream>
 
 using namespace std;
-
+/**
+ * @file funcionario.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe funcionario
+ */
 class Funcionario {
 	private:
 		virtual ostream& listarFuncionario (ostream&) const = 0;
@@ -22,7 +26,9 @@ class Funcionario {
 		Funcionario();
 		Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, string especialidade);
 		virtual ~Funcionario();
-
+    /**
+     * @brief Métodos getters e setters da classe funcionario
+     */
 		// Getters and Setters
 		virtual void setId(int new_id) = 0;
 		virtual int getId() = 0;

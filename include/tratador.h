@@ -4,7 +4,12 @@
 #include "funcionario.h"
 
 using namespace std;
-
+/**
+ * @file tratador.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @details declaração dos construtores e destrutores,
+ * é possível perceber que há o uso de herança dos atributos da Classe Funcionário.
+ */
 class Tratador: public Funcionario {
 	protected:
 		int m_nivel_de_seguranca;

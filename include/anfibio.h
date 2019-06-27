@@ -2,18 +2,25 @@
 #define _ANFIBIO_H_
 
 #include "animal.h"
-
+/**
+ * @file anfibio.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe anfibio herdando da classe animal
+ */
 using namespace std;
 
 class Anfibio: public Animal {
 	protected:
 		int m_total_de_mudas;
-
+        /**
+         * @brief Sobrecarga para listagem do animal
+         */
 		ostream& listarAnimal(ostream& os) const {
 			// os << "\n" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
 			// m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
 			// m_nome_batismo << ";" << m_total_de_mudas << ";" << endl;
 			// return os;
+            
 			os << "\nID: " << m_id << 
 			"\nClasse: " << m_classe << 
 			"\nNome Cientifico: " << m_nome_cientifico << 
@@ -27,6 +34,9 @@ class Anfibio: public Animal {
 			"\n" << endl;
 			return os;
 		}
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& salvarAnimal(ofstream& out) const{
 			out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			<< ";" << m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador 
@@ -34,6 +44,9 @@ class Anfibio: public Animal {
 			return out;
 		}
 	public:
+    /**
+     * @brief Métodos getters e setters da classe anfibio
+     */
 		Anfibio(void);
 		Anfibio(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta,
 				int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas);

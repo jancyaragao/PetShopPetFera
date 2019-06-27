@@ -4,7 +4,11 @@
 #include <string>
 
 using namespace std;
-
+/**
+ * @file animalexotico.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe animalexotico herdando da classe animalsilvestre
+ */
 #include "animalsilvestre.h"
 
 class AnimalExotico : public AnimalSilvestre {
@@ -16,7 +20,9 @@ class AnimalExotico : public AnimalSilvestre {
 		AnimalExotico (void);
 		AnimalExotico (string autorizacao_ibama, string pais_origem, string cidade_origem);
 		virtual ~AnimalExotico (void);
-
+    /**
+     * @brief metodo virtual puro para classe abstrata
+     */
 		// Getters and Setters
 		virtual void setPais_origem (string newPais_origem) = 0;
 		virtual string getPais_origem (void) = 0;

@@ -6,6 +6,11 @@
 #include "animalsilvestre.h"
 
 using namespace std;
+/**
+ * @file animalnativo.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe animalnativo herdando da classe animalsilvestre
+ */
 
 class AnimalNativo : public AnimalSilvestre {
 	protected:
@@ -16,7 +21,9 @@ class AnimalNativo : public AnimalSilvestre {
 		AnimalNativo (string autorizacao_ibama, string uf_origem);
 		virtual ~AnimalNativo ( void );
 
-
+    /**
+     * @brief metodo virtual puro para classe abstrata
+     */
 		// Getters and Setters
 		virtual void setAutorizacao_ibama (string newAutorizacao_ibama) = 0;
 		virtual string getAutorizacao_ibama ( void ) = 0;

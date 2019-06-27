@@ -5,9 +5,16 @@
 
 #include "mamifero.h"
 #include "animalexotico.h"
-
+/**
+ * @file mamiferoexotico.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe mamiferoexotico herdando da classe mamifero e animalexotico
+ */
 class MamiferoExotico : public Mamifero, public AnimalExotico {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -30,6 +37,9 @@ class MamiferoExotico : public Mamifero, public AnimalExotico {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& salvarAnimal(ofstream& out) const {
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -38,6 +48,9 @@ class MamiferoExotico : public Mamifero, public AnimalExotico {
             return out;
         }
     public:
+    /**
+     * @brief Métodos getters e setters da classe mamiferoexotico
+     */
         MamiferoExotico ( void );
         MamiferoExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,

@@ -3,10 +3,17 @@
 
 #include "ave.h"
 #include "animalexotico.h"
+/**
+ * @file anfibionativo.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe aveexotico Herda Atributos da Classe Ave e AnimalExotico
+ */
 
-// Herda Atributos da Classe Ave e AnimalExotico
 class AveExotico : public Ave, public AnimalExotico {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -30,6 +37,9 @@ class AveExotico : public Ave, public AnimalExotico {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& listarAnimal(ofstream& out) const {
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -38,6 +48,9 @@ class AveExotico : public Ave, public AnimalExotico {
             return out;
         }
     public:
+    /**
+     * @brief Métodos getters e setters da classe aveexótico
+     */
         AveExotico ( void );
         AveExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,

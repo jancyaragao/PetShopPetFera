@@ -3,9 +3,16 @@
 
 #include "mamifero.h"
 #include "animalnativo.h"
-
+/**
+ * @file mamiferonativo.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe mamiferonativo herdando de mamifero e animalnativo
+ */
 class MamiferoNativo : public Mamifero, public AnimalNativo {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -27,6 +34,9 @@ class MamiferoNativo : public Mamifero, public AnimalNativo {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& salvarAnimal(ofstream& out) const {
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -35,6 +45,9 @@ class MamiferoNativo : public Mamifero, public AnimalNativo {
             return out;
         }
     public:
+    /**
+     * @brief Métodos getters e setters da classe mamiferonativo
+     */
         MamiferoNativo( void );
         MamiferoNativo (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo,

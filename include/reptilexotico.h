@@ -3,9 +3,16 @@
 
 #include "reptil.h"
 #include "animalexotico.h"
-
+/**
+ * @file reptilexotico
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe reptilexotico herdando de reptil e animalexotico
+ */
 class ReptilExotico : public Reptil, public AnimalExotico {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             os << 
             "\nID: " << m_id << 
@@ -25,6 +32,9 @@ class ReptilExotico : public Reptil, public AnimalExotico {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& salvarAnimal(ofstream& out) const {
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -33,6 +43,9 @@ class ReptilExotico : public Reptil, public AnimalExotico {
             return out;
         }
     public:
+    /**
+     * @brief Métodos getters e setters da classe anfibioexótico
+     */
         ReptilExotico ( void );
         ReptilExotico (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso,

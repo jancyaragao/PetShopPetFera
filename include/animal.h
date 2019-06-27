@@ -4,11 +4,18 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
+/**
+ * @file animal.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe animal com métodos virtuaios puros para servir de herança
+ */
 using namespace std;
 
 class Animal {
 	private:
+    /**
+     * @brief sobrecarga de operador de inserção
+     */
 		virtual ostream& listarAnimal (ostream&) const = 0;
 		virtual ofstream& salvarAnimal (ofstream&) const = 0;
 	protected:
@@ -22,6 +29,9 @@ class Animal {
 		int m_tratador;
 		string m_nome_batismo;
 	public:
+    /**
+     * @brief métodos, métodos virtuais puros.
+     */
 		Animal( void );
 		Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, int id_veterinario, int id_tratador, string nome_batismo);
 		virtual ~Animal( void );

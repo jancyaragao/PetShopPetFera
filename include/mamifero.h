@@ -4,11 +4,17 @@
 #include "animal.h"
 
 using namespace std;
-
+/**
+ * @file mamifero.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe mamifero herdando da classe animal
+ */
 class Mamifero: public Animal {
 	protected:
 		string m_cor_pelo;
-
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
 		ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -28,6 +34,9 @@ class Mamifero: public Animal {
 			"\n" << endl;
 			return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
         ofstream& salvarAnimal(ofstream& out) const{
 			out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
 			<< ";" << m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador 
@@ -36,6 +45,9 @@ class Mamifero: public Animal {
 		}
 
 	public:
+    /**
+     * @brief Métodos getters e setters da classe mamifero
+     */
 		Mamifero();
 		Mamifero(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 				string dieta, int veterinario, int tratador, string m_nome_batismo, string cor_pelo);

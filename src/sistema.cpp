@@ -134,7 +134,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 	return true;
 } /*Anfibio*/
 /**
- * @brief cadastro de um Animal - Nativo, utilizando tratamento de exceção e com método sobrecarregado
+ * @brief cadastro de um Animal - Anfibio Nativo, utilizando tratamento de exceção e com método sobrecarregado
  */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string autorizacao,
@@ -371,7 +371,7 @@ bool Sistema::remover_animal(int id) {
 	return false;
 } /* Remover Animal */
 /**
- * @brief Edita funcionário com iterator e metódo sobrecarregado, removendo tratador.
+ * @brief Edita funcionário com iterator e metódo sobrecarregado
  */
 bool Sistema::editar_funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
 		string especialidade, int nivel_de_seguranca) {

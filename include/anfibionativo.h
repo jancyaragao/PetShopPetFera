@@ -3,9 +3,16 @@
 
 #include "anfibio.h"
 #include "animalnativo.h"
-
+/**
+ * @file anfibionativo.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe anfibioexotico herdando da classe anfibio e animalnativo
+ */
 class AnfibioNativo : public Anfibio, public AnimalNativo {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
 		ostream& listarAnimal(ostream& os) const {
 			// os << "\n" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
 			// m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -26,6 +33,9 @@ class AnfibioNativo : public Anfibio, public AnimalNativo {
 			"\n" << endl;
 			return os;
 		}
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
 		ofstream& salvarAnimal(ofstream& out) const {
 			out << "\n" << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
 			m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -34,6 +44,9 @@ class AnfibioNativo : public Anfibio, public AnimalNativo {
 			return out;
 		}
     public:
+    /**
+     * @brief Métodos getters e setters da classe anfibioexótico
+     */
         AnfibioNativo ( void );
         AnfibioNativo (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 		string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,

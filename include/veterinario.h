@@ -4,7 +4,12 @@
 #include <string>
 
 #include "funcionario.h"
-
+/**
+ * @file veterinario.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @details declaração dos construtores e destrutores,
+ * é possível perceber que há o uso de herança dos atributos da Classe Funcionário.
+ */
 using namespace std;
 
 class Veterinario: public Funcionario {

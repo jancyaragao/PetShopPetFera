@@ -4,12 +4,18 @@
 #include "animal.h"
 
 using namespace std;
-
+/**
+ * @file ave.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe ave herdando de animal
+ */
 class Ave : public Animal {
     protected:
         double m_tamanho_do_bico_cm;
         double m_envergadura_das_asas;
-
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -30,6 +36,9 @@ class Ave : public Animal {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
          ofstream& salvarAnimal(ofstream& out) const{
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo 
             << ";" << m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador 
@@ -38,6 +47,9 @@ class Ave : public Animal {
         }
 
     public:
+    /**
+     * @brief Métodos getters e setters da classe
+     */
         Ave ();
         Ave(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
         string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,

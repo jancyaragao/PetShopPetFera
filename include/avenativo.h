@@ -3,9 +3,16 @@
 
 #include "ave.h"
 #include "animalnativo.h"
-
+/**
+ * @file avenativo.h
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief classe avenativa herda de ave e animalnativo
+ */
 class AveNativo : public Ave, public AnimalNativo {
 	private:
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
         ostream& listarAnimal(ostream& os) const {
             // return os << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             // m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -28,6 +35,9 @@ class AveNativo : public Ave, public AnimalNativo {
             "\n" << endl;
             return os;
         }
+    /**
+     * @brief Sobrecarga para listagem do animal
+     */
 		ofstream& salvarAnimal(ofstream& out) const {
             out << m_id << ";" << m_classe << ";" << m_nome_cientifico << ";" << m_sexo << ";" <<
             m_tamanho << ";" << m_dieta << ";" << m_veterinario << ";" << m_tratador << ";" << 
@@ -36,6 +46,9 @@ class AveNativo : public Ave, public AnimalNativo {
             return out;
         }
     public:
+    /**
+     * @brief Sobrecarga para salvar do animal no arquivo csv
+     */
         AveNativo ( void );
         AveNativo (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
