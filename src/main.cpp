@@ -29,14 +29,8 @@ int main (void) {
 	A.cadastrar_funcionario (3, "joao", "123123123",32, "AA", "especial", 8000);
 	A.cadastrar_funcionario (4, "joao", "123123123",32, "AA", "especial", "80001");
 
-	A.salvarArquivoAnimais();
-	A.salvarArquivoFuncionarios();
-
 	A.remover_animal(1);
 	A.remover_funcionario(1);
-
-	A.salvarArquivoAnimais();
-	A.salvarArquivoFuncionarios();
 
 	A.editar_funcionario(2, "jose", "123123123", 12, "A+", "especial", "9000");
 
