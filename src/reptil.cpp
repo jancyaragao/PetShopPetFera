@@ -8,7 +8,7 @@ using namespace std;
  */
 Reptil::Reptil() { /*empty*/ }
 /**
- * @brief contrutor parametrizado utilizando herança da classe Animal
+ * @brief contrutor parametrizado utilizando herança da classe nimal
  */
 Reptil::Reptil(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool venenoso, string tipo_veneno)

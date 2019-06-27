@@ -1,10 +1,11 @@
 #include <iostream>
 #include <map>
 
-// *Alterar Caminho =>
-// **Classe s Abstratas
-// ***Makefile
-// ****
+/**
+ * @file anfibionativo.cpp
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief Arquivo main, inclui adições de elementos para testes
+ */
 
 #include "sistema.h"
 

@@ -1,7 +1,11 @@
 #include "sistema.h"
 
 using namespace std;
-
+/**
+ * @file sistema.cpp
+ * @authors Tiago Jordão, Jâncy Aragão, Louis Arthur
+ * @brief declaração do construtor
+ */
 void Sistema::initScript (void){
 
 	// Carregar dados do arquivo de animais para o container
@@ -9,7 +13,9 @@ void Sistema::initScript (void){
 	// Carrega dados do arquivo de funcionarios para o container
 
 }
-
+/**
+ * @brief Salvar dados dos animais no arquivo
+ */
 void Sistema::salvarArquivoAnimais(void){
 	ofstream animaisFile;
 	animaisFile.open ("data/animais.csv");
@@ -21,7 +27,9 @@ void Sistema::salvarArquivoAnimais(void){
 	animaisFile.close();
 	cout << "Dados de animais salvo!!!\n";
 }
-
+/**
+ * @brief Salvar dados dos Funcionarios no arquivo
+ */
 void Sistema::salvarArquivoFuncionarios(void){
 	ofstream funcionariosFile;
 	funcionariosFile.open ("data/funcionarios.csv");
@@ -33,19 +41,26 @@ void Sistema::salvarArquivoFuncionarios(void){
 	funcionariosFile.close();
 	cout << "Dados de funcionarios salvo!!!\n";
 }
-
+/**
+ * @brief listando os animais através de um iterator
+ */
 void Sistema::listarAnimais(void){
 	for (auto it = animais.begin() ; it != animais.end() ; ++it){
 		cout << *it->second;
 	}
 }
+/**
+ * @brief listando os Funcionários através de um iterator
+ */
 void Sistema::listarFuncionarios(void){
 	for(auto it = funcionarios.begin() ; it != funcionarios.end(); ++it){
 		cout << *it->second;
 	}
 }
 
-
+/**
+ * @brief Verificador de id de um funcionários para evitar ambiguidade de id(chave)
+ */
 bool Sistema::verificaIdFuncionario(int id) {
 	map<int, Funcionario*>::iterator it;
 	it = funcionarios.find(id);
@@ -54,7 +69,9 @@ bool Sistema::verificaIdFuncionario(int id) {
 	}
 	return false;
 }
-
+/**
+ * @brief Verificador de id de um animal para evitar ambiguidade de id(chave)
+ */
 bool Sistema::verificaIdAnimal(int id) {
 	map<int, Animal*>::iterator it;
 	it = animais.find(id);
@@ -63,7 +80,9 @@ bool Sistema::verificaIdAnimal(int id) {
 	}
 	return false;
 }
-
+/**
+ * @brief cadastro de um funcionário - TRATADOR,utilizando tratamento de exceção e e com metodo sobrecarregado
+ */
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
 string especialidade, int nivel_de_seguranca) {
 	try {
@@ -79,7 +98,9 @@ string especialidade, int nivel_de_seguranca) {
 	}
 	return true;
 } /*cadastrar Tratador*/
-
+/**
+ * @brief cadastro de um funcionário - VETERINÁRIO, utilizando tratamento de exceção e com metodo sobrecarregado
+ */
 bool Sistema::cadastrar_funcionario (int id, string nome, string cpf, short idade, string tipo_sanguineo,
 string especialidade, string crmv) {
 	try {
@@ -94,7 +115,9 @@ string especialidade, string crmv) {
 	}
 	return true;
 } /*cadastrar Veterinario*/
-
+/**
+ * @brief cadastro de um Animal - Anfibio, utilizando tratamento de exceção e com metodo sobrecarregado
+ */
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo) {
 		try {
@@ -110,7 +133,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 		}
 	return true;
 } /*Anfibio*/
-
+/**
+ * @brief cadastro de um Animal - Nativo, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string autorizacao,
 	string uf_origem) {
@@ -128,7 +153,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 		}
 		return true;
 	} /*Anfibio Nativo*/
-
+/**
+ * @brief cadastro de um Animal - Anfibio Exótico, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor_pelo, string autorizacao,
 	string pais_origem, string cidade_origem){
@@ -146,7 +173,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 		}
 		return true;
 	} /*Anfibio Exotico*/
-
+/**
+ * @brief cadastro de um Animal - Ave, utilizando tratamento de exceção e com método sobrecarregado
+ */
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno) 
 {
@@ -163,7 +192,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 	}
 	return true;
 } /*Cadastro de Ave*/
-
+/**
+ * @brief cadastro de um Animal - Ave Nativa, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno,
 	string autorizacao, string uf_origem){
@@ -180,7 +211,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 		}
 		return true;
 	} /*Ave Nativa*/
-
+/**
+ * @brief cadastro de um Animal - Ave Exótica, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venenoso, string tipo_veneno,
 	string autorizacao, string pais_origem, string cidade_origem) {
@@ -197,7 +230,9 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 		}
 		return true;
 	} /*Ave Exotica*/
-
+/**
+ * @brief cadastro de um Animal - Mamifero, utilizando tratamento de exceção e com método sobrecarregado
+ */
 bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
 double envergadura_das_asas) 
@@ -215,7 +250,9 @@ double envergadura_das_asas)
 	}
 	return true;
 } /*Cadastro de Mamifero*/
-
+/**
+ * @brief cadastro de um Animal -Mamifero Nativo, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
 	double envergadura_das_asas, string autorizacao,string uf_origem){
@@ -232,7 +269,9 @@ double envergadura_das_asas)
 		}
 		return true;
 	} /*Mamifero Nativo*/
-
+/**
+ * @brief cadastro de um Animal - Mamifero Exotico, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string m_nome_batismo, double tamanho_do_bico_cm,
 	double envergadura_das_asas, string autorizacao, string pais_origem, string cidade_origem){
@@ -250,7 +289,9 @@ double envergadura_das_asas)
 		}
 		return true;
 	} /*Mamifero Exotico*/
-
+/**
+ * @brief cadastro de um Animal - Reptil, utilizando tratamento de exceção e com método sobrecarregado
+ */
 bool Sistema::cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas){
 	
@@ -267,7 +308,9 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 	}
 	return true;
 } /*Cadastro de Reptil*/
-
+/**
+ * @brief cadastro de um Animal - Reptil Nativo, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas, 
 	string autorizacao, string uf_origem){
@@ -284,7 +327,9 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 		}
 		return true;
 	} /*Reptil Nativo*/
-
+/**
+ * @brief cadastro de um Animal - Reptil Exótico, utilizando tratamento de exceção e com método sobrecarregado
+ */
 	bool Sistema::cadastrar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int id_veterinario, int id_tratador, string nome_batismo, int total_de_mudas,
 	string autorizacao, string pais_origem, string cidade_origem) {
@@ -301,7 +346,9 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 		}
 		return true;
 	} /*Reptil Exotico*/
-
+/**
+ * @brief Remove um funcionário utilizando iterator
+ */
 bool Sistema::remover_funcionario(int id) {
 	map<int, Funcionario*>::iterator it;
 	it = funcionarios.find(id);
@@ -311,7 +358,9 @@ bool Sistema::remover_funcionario(int id) {
 	}
 	return false;
 } /* Remover Funcionário */
-
+/**
+ * @brief Remove um animal utilizando iterator
+ */
 bool Sistema::remover_animal(int id) {
 	map<int, Animal*>::iterator it;
 	it = animais.find(id);
@@ -321,7 +370,9 @@ bool Sistema::remover_animal(int id) {
 	}
 	return false;
 } /* Remover Animal */
-
+/**
+ * @brief Edita funcionário com iterator e metódo sobrecarregado, removendo tratador.
+ */
 bool Sistema::editar_funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
 		string especialidade, int nivel_de_seguranca) {
 			map<int, Funcionario*>::iterator it;
@@ -337,7 +388,9 @@ bool Sistema::editar_funcionario(int id, string nome, string cpf, short idade, s
 			}
 			return false;
 }
-
+/**
+ * @brief Edita funcionário com iterator e metódo sobrecarregado, removendo Veterinário.
+ */
 bool Sistema::editar_funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo,
 		string especialidade, string crmv) {
 			map<int, Funcionario*>::iterator it;
@@ -353,7 +406,9 @@ bool Sistema::editar_funcionario(int id, string nome, string cpf, short idade, s
 			}
 			return false;
 }
-
+/**
+ * @brief Edita animal - Anfibio com iterator e metódo sobrecarregado.
+ */
 bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string nome_batismo, int total_de_mudas) {
 	map<int, Animal*>::iterator it;
@@ -372,7 +427,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, int total_de_m
 	}
 	return false;
 } /*Anfibio*/
-
+/**
+ * @brief Edita animal - Anfibio Nativo com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, int total_de_mudas, 
 	string autorizacao_ibama, string uf_origem) {
@@ -394,7 +451,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, int total_de_m
 		}
 		return false;
 	} /*Anfibio Nativo*/
-
+/**
+ * @brief Edita animal - Anfibio Exótico com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, int total_de_mudas,
 	string autorizacao_ibama, string pais_origem, string cidade_origem) {
@@ -417,7 +476,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, int total_de_m
 		}
 		return false;
 	} /*Anfibio Exotico*/
-
+/**
+ * @brief Edita animal - Ave com iterator e metódo sobrecarregado.
+ */
 bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string nome_batismo, double tamanho_do_bico_cm,
 double envergadura_das_asas) {
@@ -438,7 +499,9 @@ double envergadura_das_asas) {
 	}
 	return false;
 } /*Cadastro de Ave*/
-
+/**
+ * @brief Edita animal - Ave Nativa com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, double tamanho_do_bico_cm,
 	double envergadura_das_asas, string autorizacao_ibama,string uf_origem){
@@ -461,7 +524,9 @@ double envergadura_das_asas) {
 		}
 		return false;
 	} /*Ave Nativa*/
-
+/**
+ * @brief Edita animal - Ave Exótica com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, double tamanho_do_bico_cm,
 	double envergadura_das_asas, string autorizacao_ibama, string pais_origem, string cidade_origem){
@@ -485,7 +550,9 @@ double envergadura_das_asas) {
 		}
 		return false;
 	} /*Ave Exotica*/
-
+/**
+ * @brief Edita animal - Mamifero com iterator e metódo sobrecarregado.
+ */
 bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string nome_batismo, string cor_pelo) {
 			map<int, Animal*>::iterator it;
@@ -504,7 +571,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, string cor_pel
 			}
 			return false;
 } /*Cadastro de Mamifero*/
-
+/**
+ * @brief Edita animal - Mamifero Nativo com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, string cor_pelo, string autorizacao_ibama,
 	string uf_origem) {
@@ -526,7 +595,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, string cor_pel
 				}
 				return false;
 	} /*Mamifero Nativo*/
-
+/**
+ * @brief Edita animal - Mamifero Exótico com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, string cor_pelo, string autorizacao_ibama,
 	string pais_origem, string cidade_origem){
@@ -549,7 +620,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, string cor_pel
 				}
 				return false;
 	} /*Mamifero Exotico*/
-
+/**
+ * @brief Edita animal - Réptil com iterator e metódo sobrecarregado.
+ */
 bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso, string tipo_veneno) {
 	map<int, Animal*>::iterator it;
@@ -569,7 +642,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 	}
 	return false;
 } /*Cadastro de Reptil*/
-
+/**
+ * @brief Edita animal - Nativo com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso, string tipo_veneno,
 	string autorizacao_ibama, string uf_origem){
@@ -592,7 +667,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 		}
 		return false;
 	} /*Reptil Nativo*/
-
+/**
+ * @brief Edita animal - Réptil Exótico com iterator e metódo sobrecarregado.
+ */
 	bool Sistema::editar_animal (int id, string classe, string nome_cientifico, char sexo, double tamanho,
 	string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso, string tipo_veneno,
 	string autorizacao_ibama, string pais_origem, string cidade_origem) {
@@ -616,7 +693,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 		}
 		return false;
 	} /*Reptil Exotico*/
-
+/**
+ * @brief Consultar Animal - utilizando iterator
+ */
 	void Sistema::consultarAnimal (int id){
 		map<int, Animal*>::iterator it;
 		it = animais.find(id);
@@ -626,6 +705,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 			cout << "Animal não encontrado!";
 		}
 	}
+/**
+ * @brief Consultar funcionário - utilizando iterator
+ */
 	void Sistema::consultarFuncionario (int id){
 		map<int, Funcionario*>::iterator it;
 		it = funcionarios.find(id);
