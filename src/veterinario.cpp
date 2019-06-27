@@ -107,7 +107,7 @@ string Veterinario::getTipo_sanguineo() {
 void Veterinario::setEspecialidade(string new_especialidade) {
 	m_especialidade = new_especialidade;
 }
-\/**
+/**
   * @brief get da especialidade do objeto veterinário
   * @return retorna a especialidade
   */
