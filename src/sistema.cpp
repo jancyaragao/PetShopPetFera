@@ -90,6 +90,7 @@ string especialidade, int nivel_de_seguranca) {
 		nivel_de_seguranca);
 		if (!verificaIdFuncionario(id)){
 			funcionarios.insert({id, novo});
+			salvarArquivoFuncionarios();
 		} else {
 			cerr << "ID (" << id << ") já utilizado por outro funcionario!\n";
 		}
@@ -107,6 +108,7 @@ string especialidade, string crmv) {
 		Funcionario* novo = new Veterinario(id, nome, cpf, idade, tipo_sanguineo, especialidade, crmv);
 	if (!verificaIdFuncionario(id)){
 		funcionarios.insert({id, novo});
+		salvarArquivoFuncionarios();
 	} else {
 		cerr << "ID (" << id << ") já utilizado por outro funcionario!\n";
 	}
@@ -125,6 +127,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 				m_nome_batismo, m_cor_pelo);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -145,6 +148,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 			veterinario, tratador, m_nome_batismo, m_cor_pelo, autorizacao, uf_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -165,6 +169,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, string m_cor
 			veterinario, tratador, m_nome_batismo, m_cor_pelo, autorizacao, pais_origem, cidade_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -184,6 +189,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 		m_nome_batismo, m_venenoso, tipo_veneno);
 		if (!verificaIdAnimal(id)){
 			animais.insert ({id,novo});
+			salvarArquivoAnimais();
 		} else {
 			cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 		}
@@ -203,6 +209,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 			tratador, m_nome_batismo, m_venenoso, tipo_veneno, autorizacao, uf_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -222,6 +229,7 @@ string dieta, int veterinario, int tratador, string m_nome_batismo, bool m_venen
 			tratador, m_nome_batismo, m_venenoso, tipo_veneno, autorizacao, pais_origem, cidade_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -242,6 +250,7 @@ double envergadura_das_asas)
 		tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas);
 		if (!verificaIdAnimal(id)){
 			animais.insert ({id,novo});
+			salvarArquivoAnimais();
 		} else {
 			cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 		}
@@ -261,6 +270,7 @@ double envergadura_das_asas)
 			tratador, m_nome_batismo, tamanho_do_bico_cm, envergadura_das_asas, autorizacao, uf_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -281,6 +291,7 @@ double envergadura_das_asas)
 			cidade_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -300,6 +311,7 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 		id_tratador, nome_batismo, total_de_mudas);
 		if (!verificaIdAnimal(id)){
 			animais.insert ({id,novo});
+			salvarArquivoAnimais();
 		} else {
 			cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 		}
@@ -319,6 +331,7 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 			id_tratador, nome_batismo, total_de_mudas, autorizacao, uf_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -338,6 +351,7 @@ string dieta, int id_veterinario, int id_tratador, string nome_batismo, int tota
 			id_tratador, nome_batismo, total_de_mudas, autorizacao, pais_origem, cidade_origem);
 			if (!verificaIdAnimal(id)){
 				animais.insert ({id,novo});
+				salvarArquivoAnimais();
 			} else {
 				cerr << "ID (" << id <<") já utilizado por outro Animal!\n";
 			}
@@ -354,6 +368,7 @@ bool Sistema::remover_funcionario(int id) {
 	it = funcionarios.find(id);
 	if (it != funcionarios.end()) {
 		funcionarios.erase(it);
+		salvarArquivoFuncionarios();
 		return true;
 	}
 	return false;
@@ -366,6 +381,7 @@ bool Sistema::remover_animal(int id) {
 	it = animais.find(id);
 	if (it != animais.end()) {
 		animais.erase(it);
+		salvarArquivoAnimais();
 		return true;
 	}
 	return false;
@@ -700,9 +716,10 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 		map<int, Animal*>::iterator it;
 		it = animais.find(id);
 		if (it != animais.end()){
+			cout << "+++ Consultando funcionario+++\n";
 			cout << *it->second;
 		} else {
-			cout << "Animal não encontrado!";
+			cout << "+++ Animal não encontrado! +++";
 		}
 	}
 /**
@@ -712,8 +729,9 @@ string dieta, int veterinario, int tratador, string nome_batismo, bool venenoso,
 		map<int, Funcionario*>::iterator it;
 		it = funcionarios.find(id);
 		if (it != funcionarios.end()){
+			cout << "+++ Consultando animal+++\n";
 			cout << *it->second;
 		} else {
-			cout << "Funcionário não encontrado!";
+			cout << "+++ Funcionário não encontrado! +++";
 		}
 	}

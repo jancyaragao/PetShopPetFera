@@ -45,7 +45,7 @@ petfera.exe:
 	@echo "+++ Exe criado +++"
 
 clean :
-	@echo "+++ Removendo arquivos objetos e executaveis +++"
+	@echo "+++ Removendo arquivos, objetos e executaveis +++"
 	@rm -f core $(PROG) $(OBJS)
 
 # incdir=./include
