@@ -1,4 +1,4 @@
-#include "../include/reptilexotico.h"
+#include "reptilexotico.h"
 using namespace std;
 
 ReptilExotico::ReptilExotico() { /* empty */ }

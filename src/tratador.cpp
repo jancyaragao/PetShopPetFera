@@ -1,4 +1,4 @@
-#include "../include/tratador.h"
+#include "tratador.h"
 using namespace std;
 
 Tratador::Tratador() { /*empty*/ }

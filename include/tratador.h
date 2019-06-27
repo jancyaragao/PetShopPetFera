@@ -1,7 +1,7 @@
 #ifndef _TRATADOR_H_
 #define _TRATADOR_H_
 
-#include "./funcionario.h"
+#include "funcionario.h"
 
 using namespace std;
 

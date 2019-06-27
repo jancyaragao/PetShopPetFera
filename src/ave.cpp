@@ -1,4 +1,4 @@
-#include "../include/ave.h"
+#include "ave.h"
 using namespace std;
 
 Ave::Ave() { /*empty*/ }

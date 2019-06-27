@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#include "./animalsilvestre.h"
+#include "animalsilvestre.h"
 
 class AnimalExotico : public AnimalSilvestre {
 	protected:

@@ -1,4 +1,4 @@
-#include "../include/anfibioexotico.h"
+#include "anfibioexotico.h"
 using namespace std;
 
 AnfibioExotico::AnfibioExotico() {/*empty*/}

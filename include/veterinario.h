@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "./funcionario.h"
+#include "funcionario.h"
 
 using namespace std;
 

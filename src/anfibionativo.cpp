@@ -1,4 +1,4 @@
-#include "../include/anfibionativo.h"
+#include "anfibionativo.h"
 using namespace std;
 
 AnfibioNativo::AnfibioNativo() {/*empty*/}

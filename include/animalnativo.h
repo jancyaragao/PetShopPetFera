@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "./animalsilvestre.h"
+#include "animalsilvestre.h"
 
 using namespace std;
 

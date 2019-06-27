@@ -1,4 +1,4 @@
-#include "../include/mamiferonativo.h"
+#include "mamiferonativo.h"
 using namespace std;
 
 MamiferoNativo::MamiferoNativo() { /* empty */ }

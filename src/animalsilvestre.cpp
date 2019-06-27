@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "../include/animalsilvestre.h"
+#include "animalsilvestre.h"
 
 AnimalSilvestre::AnimalSilvestre ( void ) {/* empty */ };
 AnimalSilvestre::AnimalSilvestre(string autorizacao_ibama):m_autorizacao_ibama(autorizacao_ibama) { /* empty */ }

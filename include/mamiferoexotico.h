@@ -3,8 +3,8 @@
 
 #include <iostream>
 
-#include "./mamifero.h"
-#include "./animalexotico.h"
+#include "mamifero.h"
+#include "animalexotico.h"
 
 class MamiferoExotico : public Mamifero, public AnimalExotico {
 	private:

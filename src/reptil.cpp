@@ -1,4 +1,4 @@
-#include "../include/reptil.h"
+#include "reptil.h"
 #include <string>
 using namespace std;
 

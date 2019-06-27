@@ -1,4 +1,4 @@
-#include "../include/funcionario.h"
+#include "funcionario.h"
 #include <string>
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include "../include/mamifero.h"
+#include "mamifero.h"
 #include <string>
 using namespace std;
 

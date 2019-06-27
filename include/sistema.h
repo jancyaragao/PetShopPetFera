@@ -7,29 +7,29 @@
 #include <exception>
 #include <stdexcept>
 
-#include "./funcionario.h"
-#include "./tratador.h"
-#include "./veterinario.h"
+#include "funcionario.h"
+#include "tratador.h"
+#include "veterinario.h"
 
-#include "./animal.h"
-#include "./animalexotico.h"
-#include "./animalnativo.h"
+#include "animal.h"
+#include "animalexotico.h"
+#include "animalnativo.h"
 
-#include "./mamifero.h"
-#include "./mamiferoexotico.h"
-#include "./mamiferonativo.h"
+#include "mamifero.h"
+#include "mamiferoexotico.h"
+#include "mamiferonativo.h"
 
-#include "./reptil.h"
-#include "./reptilexotico.h"
-#include "./reptilnativo.h"
+#include "reptil.h"
+#include "reptilexotico.h"
+#include "reptilnativo.h"
 
-#include "./ave.h"
-#include "./avenativo.h"
-#include "./aveexotico.h"
+#include "ave.h"
+#include "avenativo.h"
+#include "aveexotico.h"
 
-#include "./anfibio.h"
-#include "./anfibionativo.h"
-#include "./anfibioexotico.h"
+#include "anfibio.h"
+#include "anfibionativo.h"
+#include "anfibioexotico.h"
 
 using namespace std;
 

@@ -1,4 +1,4 @@
-#include "../include/veterinario.h"
+#include "veterinario.h"
 #include <string>
 using namespace std;
 

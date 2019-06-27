@@ -1,4 +1,4 @@
-#include "../include/mamiferoexotico.h"
+#include "mamiferoexotico.h"
 using namespace std;
 
 MamiferoExotico::MamiferoExotico() { /* empty */ }

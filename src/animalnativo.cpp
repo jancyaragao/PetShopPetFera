@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "../include/animalnativo.h"
+#include "animalnativo.h"
 
 AnimalNativo::AnimalNativo ( void ) { /*empty*/ };
 AnimalNativo::AnimalNativo (string autorizacao_ibama, string uf_origem):AnimalSilvestre(autorizacao_ibama), 
