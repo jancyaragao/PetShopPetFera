@@ -8,46 +8,49 @@ using namespace std;
  */
 Reptil::Reptil() { /*empty*/ }
 /**
- * @brief contrutor parametrizado utilizando herança da classe nimal
+ * @brief contrutor parametrizado utilizando herança da classe Animal
  */
 Reptil::Reptil(int id, string classe, string m_nome_cientifico, char sexo, double tamanho,
 		string dieta, int veterinario, int tratador, string m_nome_batismo, bool venenoso, string tipo_veneno)
 		: Animal(id, classe, m_nome_cientifico, sexo, tamanho, dieta, veterinario, tratador, m_nome_batismo),
 		m_venenoso(venenoso), m_tipo_veneno(tipo_veneno)
 { /*empty*/ }
-
-Reptil::~Reptil() { /*empty*/ }
 /**
  * @brief Declaração da funcionalidade dos métodos getters e setters
  * destrutor da classe reptil
+ */
+Reptil::~Reptil() { /*empty*/ }
+/**
+ * @brief set do venenoso do reptil
+ * @param recebe o venenoso 
  */
 void Reptil::setVenenoso(bool new_venenoso) {
 	m_venenoso = new_venenoso;
 }
 /**
- * @brief set do veneno do reptil
- * @param recebe um boolean do veneno
+ * @brief get venenoso do objeto reptil
+ * @return retorna venenoso
  */
 bool Reptil::getVenenoso() {
 	return m_venenoso;
 }
 /**
- * @brief get do boolean no veneno do objeto reptil
- * @return retorna o crmv
+ * @brief set do tipo do veneno do reptil
+ * @param recebe o tipo do veneno 
  */
 void Reptil::setTipo_veneno(string new_tipo_veneno) {
 	m_tipo_veneno = new_tipo_veneno;
 }
 /**
- * @brief set do tipo do veneno do reptil
- * @param recebe o tipo do veneno
+ * @brief get do tipo do veneno do objeto reptil
+ * @return retorna o tipo do veneno
  */
 string Reptil::getTipo_veneno() {
 	return m_tipo_veneno;
 }
 /**
- * @brief get do tipo do veneno do objeto reptil
- * @return retorna o tipo do veneno
+ * @brief set do ID do reptil
+ * @param recebe o ID
  */
 void Reptil::setId(int new_id){
 	m_id = new_id;
